@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Ghi chú cá nhân{% endblock %}
+{% block content %}
+<h1>Ghi chú cá nhân</h1>
+{% if notes %}
+<ul class="note-list">
+  {% for n in notes %}
+  <li>
+    <span class="note-date">{{ n.created_at[:16] }}</span>
+    <a href="{{ url_for('hexagram.detail', number=n.hexagram_number) }}">{{ n.hexagram.number }}. {{ n.hexagram.name }}</a>
+    <p>{{ n.content }}</p>
+    {% if n.tags %}<span class="tags">{% for t in n.tags %}<em>#{{ t }}</em>{% endfor %}</span>{% endif %}
+    <form method="post" action="{{ url_for('notes.delete', note_id=n.id) }}" onsubmit="return confirm('Xóa ghi chú này?');">
+      <button type="submit" class="btn danger small">Xóa</button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">Chưa có ghi chú nào. Thêm ghi chú từ trang chi tiết quẻ.</p>
+{% endif %}
+{% endblock %}

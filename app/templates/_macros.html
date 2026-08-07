@@ -1,0 +1,10 @@
+{% macro render_lines(lines, moving=[]) %}
+<div class="hexagram-bars">
+  {% for v in lines|reverse %}
+  {% set idx = lines|length - loop.index0 %}
+  <div class="bar {{ 'yang' if v == 1 else 'yin' }} {{ 'moving' if idx in moving else '' }}">
+    {% if v == 1 %}<span class="seg full"></span>{% else %}<span class="seg"></span><span class="seg"></span>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}

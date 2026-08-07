@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Gieo quẻ{% endblock %}
+{% block content %}
+<h1>Gieo quẻ</h1>
+
+<div class="tabs">
+  <button type="button" class="tab-btn active" data-tab="mai-hoa">Mai Hoa Dịch Số (theo ngày giờ)</button>
+  <button type="button" class="tab-btn" data-tab="tay">Nhập tay 6 hào (gieo xu ngoài đời)</button>
+</div>
+
+<p class="muted">Câu hỏi mẫu:
+  {% for t in templates %}
+  <button type="button" class="chip" data-category="{{ t.category }}" data-text="{{ t.text }}">{{ t.text }}</button>
+  {% endfor %}
+</p>
+
+<form id="form-mai-hoa" class="tab-panel active" method="post" action="{{ url_for('divination.cast_mai_hoa') }}">
+  <label>Câu hỏi
+    <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
+  </label>
+  <input type="hidden" name="category" class="category-input">
+
+  <label>Ngày giờ tính quẻ (mặc định = giờ hệ thống hiện tại, có thể chỉnh tay)
+    <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
+  </label>
+  <input type="hidden" name="is_manual_datetime" class="is-manual-input" value="">
+
+  <button type="submit" class="btn">Gieo quẻ</button>
+</form>
+
+<form id="form-tay" class="tab-panel" method="post" action="{{ url_for('divination.cast_manual') }}">
+  <label>Câu hỏi
+    <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
+  </label>
+  <input type="hidden" name="category" class="category-input">
+
+  <label>Ngày giờ hỏi quẻ (chỉ để lưu mốc thời gian, không dùng để tính)
+    <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
+  </label>
+  <input type="hidden" name="is_manual_datetime" class="is-manual-input" value="">
+
+  <p>Nhập kết quả gieo xu/cỏ thi thật, từ hào 1 (dưới cùng) đến hào 6 (trên cùng):</p>
+  {% for i in range(1, 7) %}
+  <label class="hao-select">Hào {{ i }}
+    <select name="hao_{{ i }}" required>
+      {% for value, label in line_state_labels %}
+      <option value="{{ value }}" {{ "selected" if value == "duong_tinh" }}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  {% endfor %}
+
+  <button type="submit" class="btn">Xem quẻ</button>
+</form>
+
+<script>
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("form-" + btn.dataset.tab).classList.add("active");
+  });
+});
+
+document.querySelectorAll(".chip").forEach(chip => {
+  chip.addEventListener("click", () => {
+    document.querySelectorAll(".question-input").forEach(i => i.value = chip.dataset.text);
+    document.querySelectorAll(".category-input").forEach(i => i.value = chip.dataset.category);
+  });
+});
+
+document.querySelectorAll(".datetime-input").forEach(input => {
+  const initial = input.value;
+  input.addEventListener("input", () => {
+    const flag = input.value !== initial ? "on" : "";
+    input.closest("form").querySelector(".is-manual-input").value = flag;
+  });
+});
+</script>
+{% endblock %}

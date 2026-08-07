@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}{{ hexagram.number }}. {{ hexagram.name }}{% endblock %}
+{% block content %}
+<a class="back-link" href="{{ url_for('hexagram.list_hexagrams') }}">&larr; Danh sách 64 quẻ</a>
+<div class="hexagram-detail">
+  <div class="hexagram-detail-lines">{{ m.render_lines(hexagram.lines) }}</div>
+  <div>
+    <h1>{{ hexagram.number }}. {{ hexagram.name }}</h1>
+    <p class="muted">Quẻ trên: {{ upper.name }} ({{ upper.ngu_hanh }}) &middot; Quẻ dưới: {{ lower.name }} ({{ lower.ngu_hanh }})</p>
+
+    {% if hexagram.content_status == "pending" %}
+    <p class="note-box">Nội dung Thoán từ / Hào từ đang được bổ sung.</p>
+    {% else %}
+    {% if hexagram.thoan_tu %}
+    <h3>Thoán từ</h3>
+    <p>{{ hexagram.thoan_tu }}</p>
+    {% endif %}
+    {% if hexagram.dai_tuong %}
+    <h3>Đại tượng</h3>
+    <p>{{ hexagram.dai_tuong }}</p>
+    {% endif %}
+    {% if hexagram.hao_tu %}
+    <h3>Hào từ</h3>
+    <ul>
+      {% for h in hexagram.hao_tu %}
+      <li>{{ h }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+
+<section>
+  <h2>Ghi chú cá nhân</h2>
+  <form class="note-form" hx-post="{{ url_for('hexagram.add_note', number=hexagram.number) }}" method="post"
+        onsubmit="return submitNote(event, {{ hexagram.number }})">
+    <textarea name="content" placeholder="Ghi chú của bạn về quẻ này..." required></textarea>
+    <input type="text" name="tags" placeholder="Tags, cách nhau bởi dấu phẩy">
+    <button type="submit">Lưu ghi chú</button>
+  </form>
+  <div id="notes-list">
+    {% include "_notes_list.html" %}
+  </div>
+</section>
+
+<script>
+function submitNote(event, number) {
+  event.preventDefault();
+  const form = event.target;
+  fetch(form.action, { method: "POST", body: new FormData(form) })
+    .then(r => r.text())
+    .then(html => { document.getElementById("notes-list").innerHTML = html; form.reset(); });
+  return false;
+}
+</script>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Kinh Dịch{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Kinh Dịch — Tra cứu &amp; Gieo quẻ</h1>
+  <p>Tra cứu kiến thức 64 quẻ, gieo quẻ theo ngày giờ (Mai Hoa Dịch Số) hoặc nhập tay kết quả gieo xu, lưu lịch sử và ghi chú cá nhân.</p>
+  <div class="actions">
+    <a class="btn" href="{{ url_for('divination.form') }}">Gieo quẻ ngay</a>
+    <a class="btn secondary" href="{{ url_for('hexagram.list_hexagrams') }}">Tra cứu 64 quẻ</a>
+  </div>
+</section>
+
+<section>
+  <h2>Lần gieo quẻ gần đây</h2>
+  {% if recent %}
+  <ul class="record-list">
+    {% for r in recent %}
+    <li>
+      <a href="{{ url_for('divination.detail', record_id=r.id) }}">
+        {{ r.created_at[:16] }} — {{ r.question or "(không có câu hỏi)" }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="muted">Chưa có lần gieo quẻ nào.</p>
+  {% endif %}
+</section>
+{% endblock %}

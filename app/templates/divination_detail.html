@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Kết quả gieo quẻ{% endblock %}
+{% block content %}
+<a class="back-link" href="{{ url_for('divination.history') }}">&larr; Lịch sử gieo quẻ</a>
+<h1>Kết quả gieo quẻ</h1>
+<p class="muted">
+  {{ record.created_at[:16] }} &middot;
+  {{ "Mai Hoa Dịch Số" if record.method == "mai_hoa" else "Nhập tay 6 hào" }}
+  {% if record.question %} &middot; Câu hỏi: “{{ record.question }}”{% endif %}
+</p>
+
+{% if record.method == "mai_hoa" %}
+<div class="info-box">
+  <p><strong>Ngày giờ tính quẻ:</strong> {{ record.input_datetime[:16].replace("T", " ") }}
+    {% if record.is_manual_datetime %}<em>(chọn tay)</em>{% else %}<em>(giờ hệ thống)</em>{% endif %}</p>
+  <p><strong>Âm lịch:</strong> {{ record.lunar.day }}/{{ record.lunar.month }}{{ "N" if record.lunar.is_leap_month }}/{{ record.lunar.year }}</p>
+  <p><strong>Can Chi:</strong> Năm {{ record.can_chi.year }} · Tháng {{ record.can_chi.month }} · Ngày {{ record.can_chi.day }} · Giờ {{ record.can_chi.hour }}</p>
+</div>
+{% endif %}
+
+<div class="cast-result">
+  <div class="cast-hexagram">
+    {{ m.render_lines(record.main_lines, moving=record.moving_positions) }}
+    <div class="hexagram-card-name">
+      <a href="{{ url_for('hexagram.detail', number=record.hexagram_main.number) }}">
+        Quẻ chính: {{ record.hexagram_main.number }}. {{ record.hexagram_main.name }}
+      </a>
+    </div>
+  </div>
+
+  {% if record.hexagram_changed %}
+  <div class="cast-arrow">→ hào động {{ record.moving_positions|join(", ") }} →</div>
+  <div class="cast-hexagram">
+    {{ m.render_lines(record.changed_lines) }}
+    <div class="hexagram-card-name">
+      <a href="{{ url_for('hexagram.detail', number=record.hexagram_changed.number) }}">
+        Quẻ biến: {{ record.hexagram_changed.number }}. {{ record.hexagram_changed.name }}
+      </a>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+{% if record.show_weather_direction %}
+<div class="info-box">
+  <h3>Thời tiết &amp; Hướng xuất hành (tham khảo theo lý thuyết truyền thống)</h3>
+  <p><strong>Quẻ trên ({{ record.upper_trigram.name }}):</strong> {{ record.upper_trigram.weather_meaning }}</p>
+  <p><strong>Hướng nên xuất hành:</strong> {{ record.upper_trigram.direction }} (theo {{ record.upper_trigram.name }})</p>
+  <p class="muted">Đây là luận giải tham khảo theo Kinh Dịch, không phải dự báo thời tiết thực tế.</p>
+</div>
+{% endif %}
+
+<section>
+  <h3>Ghi chú luận giải</h3>
+  <form method="post" action="{{ url_for('divination.update_note', record_id=record.id) }}">
+    <textarea name="note" placeholder="Ghi chú luận giải của bạn...">{{ record.note or "" }}</textarea>
+    <button type="submit" class="btn">Lưu ghi chú</button>
+  </form>
+</section>
+
+<form method="post" action="{{ url_for('divination.delete', record_id=record.id) }}"
+      onsubmit="return confirm('Xóa lần gieo quẻ này?');">
+  <button type="submit" class="btn danger">Xóa bản ghi</button>
+</form>
+{% endblock %}

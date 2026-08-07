@@ -1,0 +1,770 @@
+{
+  "1": {
+    "thoan_tu": "Càn: Nguyên, Hanh, Lợi, Trinh (rất hanh thông, lợi ích khi giữ vững chính đạo).",
+    "dai_tuong": "Trời vận hành mạnh mẽ không ngừng nghỉ; người quân tử noi theo đó mà tự cường không ngơi nghỉ.",
+    "hao_tu": [
+      "Sơ Cửu: Rồng còn ẩn náu dưới vực sâu, chưa nên hành động.",
+      "Cửu Nhị: Rồng đã hiện ra trên cánh đồng, thuận lợi khi gặp được bậc đại nhân.",
+      "Cửu Tam: Người quân tử suốt ngày hăng hái, đến tối vẫn còn thận trọng lo lắng như gặp nguy, nhưng không mắc lỗi.",
+      "Cửu Tứ: Rồng như muốn vọt lên khỏi vực sâu nhưng vẫn còn do dự, không có lỗi.",
+      "Cửu Ngũ: Rồng bay lượn trên trời, thuận lợi khi gặp được bậc đại nhân.",
+      "Thượng Cửu: Rồng bay lên quá cao, vượt quá giới hạn nên sẽ có điều phải hối tiếc."
+    ]
+  },
+  "2": {
+    "thoan_tu": "Khôn: Nguyên, Hanh, lợi Tẫn mã chi trinh (hanh thông, lợi khi giữ chính đạo nhu thuận như ngựa cái); quân tử có chỗ đi thì trước lạc sau được, phía tây nam được bạn, đông bắc mất bạn, yên giữ chính đạo thì tốt.",
+    "dai_tuong": "Đất có đức dày để chở muôn vật; người quân tử noi theo đó mà lấy đức dày nâng đỡ, bao dung mọi người.",
+    "hao_tu": [
+      "Sơ Lục: Giẫm phải sương giá biết rằng băng dày sắp đến, cần sớm đề phòng điều xấu.",
+      "Lục Nhị: Ngay thẳng, vuông vắn, rộng lớn một cách tự nhiên, không cần gắng sức mà việc gì cũng thuận lợi.",
+      "Lục Tam: Giữ kín tài năng mà làm việc cho người trên, giữ vững chính đạo đến cùng thì sẽ có kết quả tốt.",
+      "Lục Tứ: Như cái túi buộc chặt lại, thận trọng giữ mình thì không bị chê trách cũng không được khen.",
+      "Lục Ngũ: Như chiếc áo lót màu vàng, khiêm nhường mà có đức tốt bên trong nên rất tốt lành.",
+      "Thượng Lục: Rồng đánh nhau ở ngoài đồng, máu chảy đủ màu, vì đi đến cùng cực nên sinh xung đột."
+    ]
+  },
+  "3": {
+    "thoan_tu": "Truân: Nguyên, Hanh, Lợi, Trinh; chớ vội tiến hành động, nên lập chư hầu (giữ chính đạo, thận trọng buổi đầu gian nan).",
+    "dai_tuong": "Mây và sấm hội tụ báo hiệu thời kỳ gian nan buổi đầu; người quân tử nhân đó mà sắp đặt, kinh doanh việc lớn một cách thận trọng.",
+    "hao_tu": [
+      "Sơ Cửu: Gặp khó khăn khi mới tiến bước, nên giữ vững chính đạo và có thể lập nên nghiệp lớn.",
+      "Lục Nhị: Gặp trắc trở như bị ngăn cản hôn nhân, nhưng giữ vững tiết tháo thì sau mười năm mới nên duyên, có con cái.",
+      "Lục Tam: Ham đuổi theo con thú mà không có người dẫn đường sẽ lạc vào rừng sâu; người khôn ngoan biết dừng lại để tránh hối tiếc.",
+      "Lục Tứ: Chủ động tìm đến nơi cầu hôn, tiến tới thì tốt, mọi việc đều thuận lợi.",
+      "Cửu Ngũ: Người trên gặp khó khăn khi ban ơn huệ; giữ chính đạo thì việc nhỏ tốt, việc lớn có thể gặp xấu.",
+      "Thượng Lục: Xe ngựa phải lùi lại, khóc ra nước mắt lẫn máu, tượng trưng cảnh cùng đường bế tắc."
+    ]
+  },
+  "4": {
+    "thoan_tu": "Mông: Hanh; không phải ta tìm trẻ dại mà trẻ dại tìm ta; hỏi lần đầu thì bảo, hỏi lại nhiều lần là làm nhàm nên không bảo nữa; lợi khi giữ chính đạo.",
+    "dai_tuong": "Dưới núi có mạch suối mới chảy ra, tượng trưng sự non nớt ban đầu; người quân tử noi theo đó mà quả quyết trong hành động và bồi dưỡng đức hạnh của mình.",
+    "hao_tu": [
+      "Sơ Lục: Mở mang sự ngu tối cần có kỷ luật rõ ràng lúc đầu, nhưng trừng phạt mãi sẽ sinh hối tiếc.",
+      "Cửu Nhị: Bao dung, độ lượng với người còn non nớt thì tốt; biết học hỏi cả người dưới mình thì có thể gánh vác việc nhà.",
+      "Lục Tam: Không nên kết duyên với hạng người thiếu kiên định, chạy theo cái lợi trước mắt.",
+      "Lục Tứ: Bị vây khốn trong cảnh mê muội vì xa rời người hiền, nên có điều đáng tiếc.",
+      "Lục Ngũ: Ngây thơ như trẻ nhỏ nhưng biết vâng theo lời dạy bảo thì tốt lành.",
+      "Thượng Cửu: Trừng trị kẻ ngu tối, nên ngăn ngừa điều xấu chứ không nên gây tổn hại quá mức."
+    ]
+  },
+  "5": {
+    "thoan_tu": "Nhu: Hữu phu, Quang, Hanh, Trinh cát, lợi thiệp đại xuyên (có lòng thành tín, sáng sủa hanh thông, giữ chính thì tốt, lợi cho việc vượt sông lớn).",
+    "dai_tuong": "Mây bay lên trên trời, chưa đổ mưa, tượng trưng sự chờ đợi; người quân tử noi theo đó mà ăn uống vui vẻ, bình tĩnh đợi thời.",
+    "hao_tu": [
+      "Sơ Cửu: Chờ đợi ở nơi ngoài đồng xa, giữ vững thường tắc thì không có lỗi.",
+      "Cửu Nhị: Chờ đợi trên bãi cát, tuy có lời gièm pha nhỏ nhưng cuối cùng vẫn tốt lành.",
+      "Cửu Tam: Chờ đợi trong bùn lầy gần dòng nước, dễ chuốc lấy tai họa vì đến quá gần nguy hiểm.",
+      "Lục Tứ: Rơi vào cảnh nguy hiểm như trong hang huyết, nhưng biết thuận theo hoàn cảnh thì sẽ thoát ra được.",
+      "Cửu Ngũ: Chờ đợi giữa tiệc rượu thịnh soạn, giữ vững chính đạo thì tốt lành.",
+      "Thượng Lục: Rơi vào hang sâu nhưng có ba vị khách không mời mà đến giúp đỡ, biết kính trọng họ thì cuối cùng sẽ tốt."
+    ]
+  },
+  "6": {
+    "thoan_tu": "Tụng: Hữu phu, trất dịch, trung cát, chung hung; lợi kiến đại nhân, bất lợi thiệp đại xuyên (có lòng thành mà bị nghẽn, cẩn trọng thì giữa chừng tốt nhưng đến cùng thì xấu; nên gặp bậc đại nhân, không nên vượt sông lớn).",
+    "dai_tuong": "Trời và nước vận hành trái chiều nhau sinh ra tranh tụng; người quân tử noi theo đó mà khi làm việc phải cân nhắc kỹ từ lúc bắt đầu để tránh tranh chấp.",
+    "hao_tu": [
+      "Sơ Lục: Không nên kéo dài việc tranh tụng, tuy bị trách nhỏ nhưng dừng lại đúng lúc thì cuối cùng tốt.",
+      "Cửu Nhị: Biết mình không đủ sức tranh tụng nên lui về ở ẩn nơi nhỏ bé để tránh tai họa.",
+      "Lục Tam: Giữ vững đạo cũ dù gặp nguy khó, không tự nhận công lao thì cuối cùng được tốt lành.",
+      "Cửu Tứ: Biết mình không đủ lý để tranh tụng, quay về giữ yên bản phận thì tốt lành.",
+      "Cửu Ngũ: Đứng ra phân xử việc tranh tụng một cách công minh nên rất tốt lành.",
+      "Thượng Cửu: Dù có được ban thưởng vì thắng kiện, nhưng nếu cứ tranh chấp mãi thì cũng bị tước đoạt lại, không đáng tôn trọng lâu dài."
+    ]
+  },
+  "7": {
+    "thoan_tu": "Sư: Trinh, trượng nhân cát, vô cữu (giữ chính đạo, có bậc trượng nhân từng trải cầm quân thì tốt, không lỗi).",
+    "dai_tuong": "Giữa đất có nước, tượng trưng quân đội ẩn chứa trong dân; người quân tử noi theo đó mà nuôi dưỡng dân chúng để có lực lượng khi cần.",
+    "hao_tu": [
+      "Sơ Lục: Xuất quân cần có kỷ luật rõ ràng ngay từ đầu, nếu không sẽ gặp điều xấu.",
+      "Cửu Nhị: Vị tướng đứng giữa ba quân, được vua tin cậy giao phó trọng trách nên tốt lành, không lỗi.",
+      "Lục Tam: Quân đội có quá nhiều người chỉ huy sẽ dẫn đến thất bại.",
+      "Lục Tứ: Biết lui quân đúng lúc trong thế bất lợi thì không có lỗi.",
+      "Lục Ngũ: Chỉ nên dụng binh khi có lý do chính đáng như bắt kẻ xâm phạm, không nên hiếu chiến.",
+      "Thượng Lục: Sau khi thắng trận, vua luận công phong thưởng, nhưng không nên trọng dụng kẻ tiểu nhân vào việc lớn."
+    ]
+  },
+  "8": {
+    "thoan_tu": "Tỷ: Cát; nguyên phệ nguyên vĩnh trinh, vô cữu; bất ninh phương lai, hậu phu hung (tốt lành; xét kỹ gốc rễ, giữ lâu dài chính đạo thì không lỗi; kẻ chưa yên định sẽ tìm đến, kẻ đến sau thì xấu).",
+    "dai_tuong": "Nước ở trên mặt đất, thấm khắp và gắn kết; các bậc vương giả xưa noi theo đó mà xây dựng các nước chư hầu và thân thiết với các bậc chư hầu.",
+    "hao_tu": [
+      "Sơ Lục: Có lòng thành tín từ đầu như bình đất chứa đầy vật quý thì sẽ được điều tốt lành lâu dài.",
+      "Lục Nhị: Kết giao xuất phát từ tấm lòng chân thật bên trong, giữ vững chính đạo thì tốt.",
+      "Lục Tam: Kết giao với kẻ không xứng đáng nên gặp cảnh không thuận lợi.",
+      "Lục Tứ: Biết hướng lên kết giao với người hiền ở trên, giữ chính đạo thì tốt lành.",
+      "Cửu Ngũ: Như vị vua đi săn chỉ vây ba mặt để chừa lối cho thú chạy thoát, thể hiện đức khoan hòa nên được lòng người, rất tốt.",
+      "Thượng Lục: Muốn kết giao mà không có nền tảng, đến sau quá muộn nên gặp điều xấu."
+    ]
+  },
+  "9": {
+    "thoan_tu": "Tiểu Súc: Hanh; mật vân bất vũ, tự ngã tây giao (hanh thông; mây dày mà chưa mưa, tích lũy còn nhỏ).",
+    "dai_tuong": "Gió thổi trên trời, sức cản còn nhỏ; người quân tử noi theo đó mà trau dồi văn đức của mình.",
+    "hao_tu": [
+      "Sơ Cửu: Quay trở lại con đường của mình, việc đó tốt lành.",
+      "Cửu Nhị: Được dẫn dắt trở về đúng đường nên cũng tốt lành.",
+      "Cửu Tam: Như chiếc xe bị tuột đai, hay vợ chồng ngoảnh mặt không nhìn nhau, tượng trưng sự bất hòa, ngăn trở.",
+      "Lục Tứ: Có lòng thành nên tránh được nguy hiểm và lo sợ, không có lỗi.",
+      "Cửu Ngũ: Có lòng thành thực, biết liên kết với người xung quanh để cùng chia sẻ của cải.",
+      "Thượng Cửu: Mưa đã đổ xuống, việc tích lũy tạm dừng; cần giữ mình như trăng gần tròn, người quân tử nên ở yên, hành động thêm sẽ gặp nguy."
+    ]
+  },
+  "10": {
+    "thoan_tu": "Lý: Lý hổ vĩ, bất điệt nhân, hanh (giẫm vào đuôi cọp mà cọp không cắn, hanh thông).",
+    "dai_tuong": "Trên là trời dưới là đầm, tôn ti rõ ràng; người quân tử noi theo đó mà phân biệt trên dưới, định rõ chí hướng của dân.",
+    "hao_tu": [
+      "Sơ Cửu: Bước đi theo lối quen thuộc, cứ tiến tới thì không có lỗi.",
+      "Cửu Nhị: Đi trên con đường bằng phẳng, sống yên tĩnh giữ vững chính đạo thì tốt lành.",
+      "Lục Tam: Như người chột mắt mà tưởng nhìn rõ, người què mà tưởng đi vững, giẫm phải đuôi cọp nên bị cắn, ý nói hành động quá sức mình sẽ gặp xấu.",
+      "Cửu Tứ: Giẫm phải đuôi cọp nhưng biết lo sợ cẩn trọng nên cuối cùng vẫn tốt lành.",
+      "Cửu Ngũ: Quyết đoán, cương quyết bước đi, tuy giữ chính đạo nhưng vẫn tiềm ẩn nguy hiểm.",
+      "Thượng Cửu: Xem lại toàn bộ con đường đã đi qua, nếu trọn vẹn không sai sót thì được đại cát."
+    ]
+  },
+  "11": {
+    "thoan_tu": "Thái: Tiểu vãng đại lai, cát Hanh (cái nhỏ đi cái lớn đến, tốt lành và hanh thông).",
+    "dai_tuong": "Trời đất giao hòa gọi là Thái; bậc vua chúa noi theo đó mà chế định phép tắc, giúp dân thuận theo lẽ trời đất mà sống yên ổn.",
+    "hao_tu": [
+      "Sơ Cửu: Như nhổ cỏ tranh kéo theo cả rễ liên kết, cùng tiến lên với đồng loại thì tốt lành.",
+      "Cửu Nhị: Bao dung người kém cỏi, dám vượt sông lớn, không bỏ rơi người xa, không kết bè riêng, giữ đạo trung chính.",
+      "Cửu Tam: Thời bình yên rồi cũng có lúc biến động, nhưng giữ vững chính đạo thì không mắc lỗi, không cần lo buồn mà vẫn hưởng phúc.",
+      "Lục Tứ: Khiêm nhường hạ mình xuống, tin cậy vào láng giềng bằng tấm lòng chân thành chứ không cậy vào của cải.",
+      "Lục Ngũ: Như công chúa xuất giá mà hạ mình khiêm nhường với chồng, nên có hạnh phúc và tốt lành lớn.",
+      "Thượng Lục: Tường thành đổ xuống hào, thời thái đã hết; lúc này dùng binh cũng vô ích, mệnh lệnh ban ra không ngăn được suy thoái."
+    ]
+  },
+  "12": {
+    "thoan_tu": "Bĩ: Bĩ chi phỉ nhân, bất lợi quân tử trinh, đại vãng tiểu lai (thời bế tắc không phải người tốt cầm quyền, bất lợi cho người quân tử giữ chính đạo; cái lớn đi cái nhỏ đến).",
+    "dai_tuong": "Trời đất không giao hòa gọi là Bĩ; người quân tử noi theo đó mà giữ đức, lánh nạn, không ham vinh lộc trong thời bế tắc.",
+    "hao_tu": [
+      "Sơ Lục: Như nhổ cỏ tranh kéo theo rễ liên kết, giữ vững chính đạo thì tốt, được hanh thông.",
+      "Lục Nhị: Người nhỏ nhen thì thuận theo hoàn cảnh mà được yên, người quân tử biết ẩn nhẫn, không a dua thì thành công.",
+      "Lục Tam: Ôm ấp mưu tính xấu trong lòng mà tự thấy hổ thẹn, chưa đủ sức thi hành.",
+      "Cửu Tứ: Hành động thuận theo mệnh trời, không mắc lỗi, đồng chí cùng nhau hưởng phúc.",
+      "Cửu Ngũ: Bậc đại nhân đứng ra chấm dứt cảnh bế tắc nên tốt lành, nhưng vẫn cần luôn cẩn trọng như còn nguy cơ đổ vỡ.",
+      "Thượng Cửu: Cảnh bế tắc đến hồi kết thúc, ban đầu còn bĩ nhưng sau đó chuyển sang vui mừng."
+    ]
+  },
+  "13": {
+    "thoan_tu": "Đồng Nhân: Đồng nhân vu dã, Hanh, lợi thiệp đại xuyên, lợi quân tử trinh (hòa hợp người ở nơi đồng nội rộng rãi thì hanh thông, lợi cho việc vượt sông lớn, lợi cho người quân tử giữ chính đạo).",
+    "dai_tuong": "Trời và lửa cùng có xu hướng đi lên, tượng trưng sự hòa hợp; người quân tử noi theo đó mà phân biệt sự vật theo loại để quy tụ lòng người.",
+    "hao_tu": [
+      "Sơ Cửu: Vừa ra khỏi cửa đã hòa hợp với người, không thiên vị riêng nên không có lỗi.",
+      "Lục Nhị: Chỉ hòa hợp trong phạm vi thân tộc riêng, đó là điều đáng tiếc vì còn hẹp hòi.",
+      "Cửu Tam: Giấu quân trong bụi rậm, lên gò cao dò xét ba năm không dám ra tay, vì lo sợ đối phương mạnh hơn.",
+      "Cửu Tứ: Trèo lên tường thành định tấn công nhưng rồi thôi, biết dừng đúng lúc nên tốt lành.",
+      "Cửu Ngũ: Trước khóc than sau lại vui cười, vì đại quân hợp sức mà cuối cùng gặp được nhau, chiến thắng.",
+      "Thượng Cửu: Hòa hợp với người ở nơi ngoại thành xa xôi, không có gì phải hối tiếc dù chưa được trọn vẹn."
+    ]
+  },
+  "14": {
+    "thoan_tu": "Đại Hữu: Nguyên Hanh (rất hanh thông, có nhiều của cải lớn).",
+    "dai_tuong": "Lửa ở trên trời soi sáng muôn vật, tượng trưng sự thịnh vượng lớn; người quân tử noi theo đó mà ngăn điều ác, biểu dương điều thiện, thuận theo mệnh trời.",
+    "hao_tu": [
+      "Sơ Cửu: Chưa giao thiệp với điều hại, biết được khó khăn nên giữ mình cẩn trọng thì không lỗi.",
+      "Cửu Nhị: Như xe lớn chở đầy của cải mà vẫn đi được mọi nơi, có sức mạnh mà biết khiêm nhường phục tùng nên không lỗi.",
+      "Cửu Tam: Bậc chư hầu đem lễ vật dâng lên thiên tử, chỉ người có đức mới làm được việc ấy mà không gặp hại.",
+      "Cửu Tứ: Biết chừng mực, không phô trương quá mức sự giàu có của mình nên tránh được lỗi lầm.",
+      "Lục Ngũ: Lấy lòng thành tín và uy nghiêm khiêm tốn để đối đãi với người dưới, được kính phục nên tốt lành.",
+      "Thượng Cửu: Được trời giúp đỡ, tốt lành, mọi việc đều thuận lợi."
+    ]
+  },
+  "15": {
+    "thoan_tu": "Khiêm: Hanh, quân tử hữu chung (hanh thông, người quân tử khiêm nhường sẽ có kết quả tốt đẹp đến cùng).",
+    "dai_tuong": "Núi cao mà ẩn mình dưới đất, tượng trưng đức khiêm nhường; người quân tử noi theo đó mà bớt chỗ dư, bù chỗ thiếu, cân nhắc để phân chia công bằng.",
+    "hao_tu": [
+      "Sơ Lục: Người quân tử khiêm nhường lại càng thêm khiêm nhường, nhờ đó có thể vượt qua khó khăn lớn mà vẫn tốt lành.",
+      "Lục Nhị: Đức khiêm nhường đã được người đời biết đến, giữ vững chính đạo thì tốt lành.",
+      "Cửu Tam: Người quân tử có công lao mà vẫn khiêm nhường, giữ được đến cuối nên có kết quả tốt đẹp.",
+      "Lục Tứ: Mọi việc đều thuận lợi khi biết phát huy thêm đức khiêm nhường của mình.",
+      "Lục Ngũ: Không ỷ vào sự giàu có mà vẫn được láng giềng theo về, khi cần có thể dùng đến binh lực để chấn chỉnh.",
+      "Thượng Lục: Đức khiêm nhường đã nổi tiếng, có thể dùng quân đội nhưng chỉ nên chỉnh đốn trong phạm vi đất nước của mình, không nên đi xa."
+    ]
+  },
+  "16": {
+    "thoan_tu": "Dự: Lợi kiến hầu, hành sư (nên lập chư hầu, xuất quân hành binh).",
+    "dai_tuong": "Sấm động vang lên khỏi mặt đất, tượng trưng niềm vui thư thái; các bậc vương giả xưa noi theo đó mà soạn nhạc, tôn sùng công đức để tế trời đất, tổ tiên.",
+    "hao_tu": [
+      "Sơ Lục: Khoe khoang niềm vui thích của mình ra ngoài một cách lộ liễu nên gặp điều xấu.",
+      "Lục Nhị: Vững vàng như đá giữa lúc vui chơi, giữ chính đạo một cách sáng suốt nên tốt lành.",
+      "Lục Tam: Ngước nhìn lên trên để tìm sự vui thích nương nhờ, nếu chậm trễ do dự sẽ có điều hối tiếc.",
+      "Cửu Tứ: Là người mang lại niềm vui và sự hòa hợp cho mọi người, đạt được thành công lớn.",
+      "Lục Ngũ: Như người mắc bệnh dai dẳng nhưng vẫn cầm cự được, ý nói ham vui quá mà suy yếu nhưng chưa đến mức nguy hại.",
+      "Thượng Lục: Mê đắm trong vui chơi đến mức mờ tối, nhưng nếu kịp thời thay đổi thì vẫn có thể tránh được lỗi lầm."
+    ]
+  },
+  "17": {
+    "thoan_tu": "Nguyên hanh, lợi trinh, vô cữu (Rất hanh thông; lợi về giữ vững chính đạo; như vậy sẽ không có lỗi lầm)",
+    "dai_tuong": "Sấm động trong đầm (Trạch Lôi Tùy): người quân tử noi theo lẽ ấy, biết tùy thời mà hành động, đến tối thì vào nhà nghỉ ngơi.",
+    "hao_tu": [
+      "Sơ Cửu: Thay đổi mục tiêu theo lẽ phải; giữ vững chính đạo thì tốt lành.",
+      "Lục Nhị: Bám theo kẻ nhỏ mà bỏ người lớn có kinh nghiệm, không hay.",
+      "Lục Tam: Bám theo người lớn có kinh nghiệm mà bỏ kẻ nhỏ, nên kiên định theo hướng đó.",
+      "Cửu Tứ: Được nhiều người theo về nhưng nếu không chính đáng, chân thành sẽ sinh hung; cần giữ đạo lý mới tránh lỗi.",
+      "Cửu Ngũ: Có lòng thành tín hướng về điều tốt đẹp, tốt lành.",
+      "Thượng Lục: Giữ chặt lòng thành tín, ràng buộc bền vững không rời."
+    ]
+  },
+  "18": {
+    "thoan_tu": "Nguyên hanh, lợi thiệp đại xuyên (Rất hanh thông; lợi cho việc vượt qua khó khăn lớn, như qua sông lớn)",
+    "dai_tuong": "Dưới núi có gió (Sơn Phong Cổ, việc hư hỏng tích tụ lâu ngày): người quân tử noi theo đó mà chấn hưng dân chúng, bồi đắp đức hạnh của mình.",
+    "hao_tu": [
+      "Sơ Lục: Con sửa việc hỏng của cha; nếu khéo léo, cha khỏi mang tiếng lỗi, ban đầu nguy nhưng cuối cùng tốt.",
+      "Cửu Nhị: Sửa việc hỏng của mẹ, không nên quá cứng rắn.",
+      "Cửu Tam: Sửa việc hỏng của cha, có chút hối tiếc nhỏ nhưng không lỗi lớn.",
+      "Lục Tứ: Khoan dung nhìn việc hỏng của cha mà chần chừ, nếu cứ tiến tới sẽ đáng tiếc.",
+      "Lục Ngũ: Khéo sửa việc hỏng của cha, được khen vì biết dùng đúng người đúng việc.",
+      "Thượng Cửu: Không màng danh lợi, giữ khí tiết cao thượng, chỉ lo trọn việc riêng của mình."
+    ]
+  },
+  "19": {
+    "thoan_tu": "Nguyên hanh, lợi trinh; chí vu bát nguyệt hữu hung (Rất hanh thông, lợi giữ chính đạo; nhưng đến tháng tám sẽ có điều không tốt, ý nhắc phải đề phòng lúc thịnh)",
+    "dai_tuong": "Đất kề bên trên đầm (Địa Trạch Lâm, ý nghĩa tiến đến gần, cai quản): người quân tử noi theo đó mà dạy dỗ dân không biết mệt mỏi, bao dung nuôi dưỡng dân không giới hạn.",
+    "hao_tu": [
+      "Sơ Cửu: Cùng tiến lên với người đồng chí hướng; giữ chính đạo thì tốt lành.",
+      "Cửu Nhị: Cùng tiến lên với người đồng chí hướng; mọi việc đều thuận lợi, tốt lành.",
+      "Lục Tam: Vui vẻ mà tiến tới nhưng không thực chất có lợi; biết lo âu sửa mình thì tránh được lỗi.",
+      "Lục Tứ: Tiến tới bằng đạo đức cao nhất, không có lỗi.",
+      "Lục Ngũ: Tiến tới bằng trí tuệ, xứng đáng bậc vua lớn, tốt lành.",
+      "Thượng Lục: Tiến tới bằng lòng trung hậu, chân thành; tốt lành, không lỗi."
+    ]
+  },
+  "20": {
+    "thoan_tu": "Quán: như người đã rửa tay tề chỉnh mà chưa dâng lễ vật, có lòng thành kính khiến người khác ngưỡng mộ noi theo",
+    "dai_tuong": "Gió đi trên đất (Phong Địa Quán, ý nghĩa xem xét, quan sát): bậc vua xưa noi theo đó mà đi khắp bốn phương, xem xét dân tình để thi hành giáo hóa.",
+    "hao_tu": [
+      "Sơ Lục: Nhìn sự việc nông cạn như trẻ con; kẻ dưới không đáng trách nhưng người quân tử nên lấy làm đáng tiếc.",
+      "Lục Nhị: Nhìn lén qua khe cửa, chỉ hợp với sự giữ mình khép nép của phận nữ nhi.",
+      "Lục Tam: Tự xét lại đường đời của mình để quyết định nên tiến hay nên lui.",
+      "Lục Tứ: Chiêm ngưỡng sự thịnh vượng của đất nước; nên ra làm khách hiền của vua.",
+      "Cửu Ngũ: Tự xét đường đời của chính mình; là người quân tử nên nhờ vậy không mắc lỗi.",
+      "Thượng Cửu: Tự xét đức hạnh của mình xem có xứng bậc quân tử hay không; nhờ đó tránh được lỗi lầm."
+    ]
+  },
+  "21": {
+    "thoan_tu": "Hanh, lợi dụng ngục (Hanh thông; lợi cho việc dùng hình phạt, pháp luật để trừ bỏ điều ngăn cách)",
+    "dai_tuong": "Sấm chớp cùng hiện (Hỏa Lôi Phệ Hạp, ý nghĩa cắn phá vật ngăn cách): bậc vua xưa noi theo đó mà làm sáng tỏ hình phạt, chỉnh đốn pháp luật.",
+    "hao_tu": [
+      "Sơ Cửu: Bị cùm chân, mất ngón chân; là hình phạt nhỏ răn đe từ đầu nên không có lỗi.",
+      "Lục Nhị: Cắn thịt mềm mà đứt cả mũi; xử phạt nghiêm nên không lỗi.",
+      "Lục Tam: Cắn thịt khô gặp vị khó chịu; có chút đáng tiếc nhỏ nhưng không lỗi lớn.",
+      "Cửu Tứ: Cắn thịt khô dính xương mà được tiền và cung tên; thưởng phạt phân minh, tốt lành.",
+      "Lục Ngũ: Cắn thịt khô mà được vàng; xử đúng mực nên không lỗi.",
+      "Thượng Cửu: Mang gông mất tai; tội đã quá nặng nên gặp điều không hay."
+    ]
+  },
+  "22": {
+    "thoan_tu": "Hanh, tiểu lợi hữu du vãng (Hanh thông; có lợi nhỏ khi tiến tới hành động)",
+    "dai_tuong": "Dưới núi có lửa (Sơn Hỏa Bí, ý nghĩa trang sức, tô điểm): người quân tử noi theo đó mà làm sáng tỏ các việc chính sự thông thường, nhưng không dám khinh suất quyết đoán việc hình ngục lớn.",
+    "hao_tu": [
+      "Sơ Cửu: Trang sức nơi bàn chân; thà bỏ xe mà đi bộ, giữ khí tiết trong sạch.",
+      "Cửu Nhị: Trang sức nơi bộ râu; vẻ đẹp phụ thuộc vào người khác.",
+      "Cửu Tam: Được trang sức nhuần thấm ơn huệ; giữ vững chính đạo thì tốt lành.",
+      "Lục Tứ: Trang sức mà chỉ dùng màu trắng giản dị; đi cầu hôn chứ chẳng phải ý cướp đoạt.",
+      "Lục Ngũ: Được trang sức bằng lụa mỏng nơi gò vườn; tưởng như keo kiệt nhưng cuối cùng tốt lành.",
+      "Thượng Cửu: Lấy sự giản dị, màu trắng mộc mạc làm trang sức; không có lỗi."
+    ]
+  },
+  "23": {
+    "thoan_tu": "Bất lợi hữu du vãng (Không có lợi khi tiến hành hay hành động, vì thời thế đang suy bại)",
+    "dai_tuong": "Núi gắn liền với đất (Sơn Địa Bác, ý nghĩa lở, suy bại): kẻ trên nên hậu đãi người dưới để yên ổn chỗ ở của mình.",
+    "hao_tu": [
+      "Sơ Lục: Lật đổ giường bắt đầu từ chân giường; báo hiệu sự suy bại khởi phát.",
+      "Lục Nhị: Lật đổ giường đến tận khung; sự suy bại đã lan rộng hơn.",
+      "Lục Tam: Ở giữa đám người phá hoại nhưng không lỗi, vì biết hướng theo lẽ phải.",
+      "Lục Tứ: Giường đã bị lật đổ hoàn toàn; tai họa đã đến gần thân mình.",
+      "Lục Ngũ: Dẫn dắt kẻ dưới nối tiếp nhau như đàn cá, được ơn huệ từ bề trên.",
+      "Thượng Cửu: Như quả lớn còn sót lại chưa bị ăn; mầm khôi phục vẫn còn đó."
+    ]
+  },
+  "24": {
+    "thoan_tu": "Hanh; xuất nhập vô tật, bằng lai vô cữu (Hanh thông; ra vào không bị trở ngại, bạn bè tìm đến không có lỗi)",
+    "dai_tuong": "Sấm ở trong lòng đất (Địa Lôi Phục, ý nghĩa quay trở lại): bậc vua xưa noi theo đó, vào ngày đông chí thì đóng cửa ải, thương nhân lữ khách không đi lại, nhà vua không tuần hành các phương.",
+    "hao_tu": [
+      "Sơ Cửu: Quay lại sửa lỗi khi còn nhỏ, chưa đến mức phải hối hận; đại cát.",
+      "Lục Nhị: Quay lại một cách tốt đẹp, khiêm nhường; tốt lành.",
+      "Lục Tam: Quay lại nhiều lần do dự; tuy có phần nguy hiểm nhưng không lỗi.",
+      "Lục Tứ: Đi cùng đám đông mà một mình biết quay về đường chính; không lỗi.",
+      "Lục Ngũ: Quay lại một cách cao thượng, đôn hậu; không có gì phải hối hận.",
+      "Thượng Lục: Mê muội không chịu quay lại; gặp điều hung."
+    ]
+  },
+  "25": {
+    "thoan_tu": "Nguyên hanh, lợi trinh; kỳ phỉ chính hữu sảnh (Rất hanh thông, lợi giữ chính đạo; nếu không chính đáng ắt gặp tai họa)",
+    "dai_tuong": "Dưới trời có sấm động, vạn vật đều thuận theo bản tính tự nhiên mà sinh trưởng (Thiên Lôi Vô Vọng): bậc vua xưa noi theo đó mà thuận thời nuôi dưỡng muôn vật một cách chân thật, không giả dối.",
+    "hao_tu": [
+      "Sơ Cửu: Giữ lòng chân thật mà tiến tới; tốt lành.",
+      "Lục Nhị: Được hưởng mà không cần gieo trồng trước, thuận theo lẽ tự nhiên chứ không mưu cầu.",
+      "Lục Tam: Người vô tội mà vẫn gặp tai họa bất ngờ, như trâu bị người qua đường dắt mất.",
+      "Cửu Tứ: Giữ vững chính đạo, không vọng động thì không có lỗi.",
+      "Cửu Ngũ: Người vốn chân thành mà mắc bệnh; không cần dùng thuốc cũng sẽ tự khỏi.",
+      "Thượng Cửu: Dù giữ lòng chân thật, nhưng hành động không đúng lúc vẫn có thể gặp lỗi."
+    ]
+  },
+  "26": {
+    "thoan_tu": "Lợi trinh; bất gia thực cát, lợi thiệp đại xuyên (Lợi giữ chính đạo; không ở nhà hưởng lộc mà ra gánh vác việc lớn thì tốt, lợi cho việc vượt qua khó khăn lớn)",
+    "dai_tuong": "Trời ở trong núi, ý nghĩa súc tích lớn lao (Sơn Thiên Đại Súc): người quân tử noi theo đó mà ghi nhớ nhiều lời nói, việc làm của người xưa để bồi đắp đức hạnh của mình.",
+    "hao_tu": [
+      "Sơ Cửu: Đang ở thế nguy hiểm; nên dừng lại, chưa vội tiến tới.",
+      "Cửu Nhị: Như chiếc xe bị tháo mất đai trục; biết dừng đúng lúc nên không lỗi.",
+      "Cửu Tam: Rong ruổi theo ngựa tốt; cần nhận rõ khó khăn, giữ chính đạo, luyện tập hằng ngày thì đi đâu cũng có lợi.",
+      "Lục Tứ: Như bò con bị buộc thanh gỗ trên sừng để ngăn ngừa từ sớm; đại cát.",
+      "Lục Ngũ: Như răng heo đã bị thiến, bớt phần hung hãn; tốt lành.",
+      "Thượng Cửu: Đạt tới đạo lớn thông suốt như bầu trời; mọi việc đều tiến triển thuận lợi."
+    ]
+  },
+  "27": {
+    "thoan_tu": "Trinh cát (Giữ vững chính đạo thì tốt lành, ý nói về đạo nuôi dưỡng)",
+    "dai_tuong": "Dưới núi có sấm động (Sơn Lôi Di, ý nghĩa nuôi dưỡng): người quân tử noi theo đó mà thận trọng lời ăn tiếng nói, tiết chế trong việc ăn uống.",
+    "hao_tu": [
+      "Sơ Cửu: Bỏ đi khả năng tự nuôi mình quý báu mà thèm khát nhìn người khác ăn uống; gặp hung.",
+      "Lục Nhị: Tìm sự nuôi dưỡng trái lẽ thường, dù hướng lên hay hướng xuống đều không đúng đắn, cứ tiến sẽ gặp hung.",
+      "Lục Tam: Nuôi dưỡng trái với đạo lý; dù cố giữ vững cũng khó tránh khỏi hung.",
+      "Lục Tứ: Tìm sự nuôi dưỡng theo đúng lẽ, biết hướng xuống nâng đỡ người dưới; tốt lành.",
+      "Lục Ngũ: Tuy làm trái lẽ thường nhưng biết giữ vững chính đạo thì vẫn tốt lành.",
+      "Thượng Cửu: Là nguồn nuôi dưỡng cho người khác; tuy ở thế nguy hiểm nhưng vẫn tốt lành."
+    ]
+  },
+  "28": {
+    "thoan_tu": "Đống nạo; lợi hữu du vãng, hanh (Cột nhà cong yếu, tình thế quá mức; lợi khi tiến hành việc lớn, sẽ hanh thông)",
+    "dai_tuong": "Đầm ngập cây cối (Trạch Phong Đại Quá, ý nghĩa thái quá): người quân tử noi theo đó mà đứng vững một mình không sợ hãi, dù phải lui ẩn cũng không buồn phiền.",
+    "hao_tu": [
+      "Sơ Lục: Lót cỏ tranh trắng bên dưới vật đặt xuống; cẩn trọng từ đầu nên không có lỗi.",
+      "Cửu Nhị: Như cây liễu già đâm chồi non, như chồng già lấy được vợ trẻ; có lợi về mọi mặt.",
+      "Cửu Tam: Cột nhà yếu bị cong; gặp hung vì gánh quá sức.",
+      "Cửu Tứ: Cột nhà cong lên vững chãi; tốt lành, nhưng nếu còn trông cậy thêm nơi khác sẽ sinh đáng tiếc.",
+      "Cửu Ngũ: Như cây liễu già trổ hoa, như vợ già lấy được chồng trẻ; không đáng khen cũng không đáng chê.",
+      "Thượng Lục: Liều lĩnh lội qua dòng nước ngập đầu; gặp hung nhưng không đáng trách vì xuất phát từ chí khí."
+    ]
+  },
+  "29": {
+    "thoan_tu": "Hữu phu, duy tâm hanh (Có lòng thành tín, nhờ đó mà tâm trí được hanh thông dù trong hiểm nạn)",
+    "dai_tuong": "Nước chảy liên tục không ngừng (Thuần Khảm, ý nghĩa hiểm nạn trùng điệp): người quân tử noi theo đó mà thường xuyên giữ vững đức hạnh, chuyên cần luyện tập việc dạy dỗ.",
+    "hao_tu": [
+      "Sơ Lục: Sa vào hố hiểm trùng điệp, lại lọt vào hang sâu bên trong; gặp hung.",
+      "Cửu Nhị: Gặp nguy hiểm ngay trong hố sâu, nhưng vẫn tìm được chút lối thoát nhỏ.",
+      "Lục Tam: Đi tới hay lui đều gặp hiểm trở; bất an, khó yên ổn.",
+      "Lục Tứ: Giữ sự giản dị chân thành, như chỉ một be rượu, giỏ cơm đơn sơ; vẫn vượt qua được hoạn nạn.",
+      "Cửu Ngũ: Nước trong hố chưa đầy tràn; dần dần mọi việc sẽ ổn định, không có lỗi.",
+      "Thượng Lục: Bị trói buộc chặt, giam trong bụi gai; gặp hung."
+    ]
+  },
+  "30": {
+    "thoan_tu": "Lợi trinh, hanh; súc tẫn ngưu cát (Lợi giữ chính đạo thì hanh thông; như nuôi bò cái hiền thuận thì tốt lành)",
+    "dai_tuong": "Ánh sáng nối tiếp nhau soi rọi (Thuần Ly, ý nghĩa lệ thuộc, bám vào): bậc đại nhân noi theo đó mà dùng ánh sáng đức độ của mình soi rọi khắp bốn phương.",
+    "hao_tu": [
+      "Sơ Cửu: Bước đi có phần rối loạn ban đầu, nhưng biết thận trọng cung kính nên không có lỗi.",
+      "Lục Nhị: Ở vị trí giữa, đẹp đẽ như sắc vàng; đại cát.",
+      "Cửu Tam: Như ánh nắng buổi chiều tà; nếu không vui theo lẽ trời mà chỉ than thở như người già thì gặp hung.",
+      "Cửu Tứ: Đến một cách đột ngột dữ dội như lửa cháy bùng lên; bị mọi người chối bỏ.",
+      "Lục Ngũ: Buồn thương, nước mắt tuôn trào, nhưng biết lo sợ sửa mình nên tốt lành.",
+      "Thượng Cửu: Được vua tin dùng đi chinh phạt; trừng trị kẻ cầm đầu mà khoan dung người theo, không có lỗi."
+    ]
+  },
+  "31": {
+    "thoan_tu": "Hanh, lợi trinh; thủ nữ cát (Hanh thông, lợi giữ chính đạo; như việc cưới hỏi thì tốt lành, ý nói về sự cảm ứng qua lại)",
+    "dai_tuong": "Trên núi có đầm (Trạch Sơn Hàm, ý nghĩa cảm ứng): người quân tử noi theo đó mà giữ lòng khiêm nhường, rộng mở để đón nhận và cảm ứng với người khác.",
+    "hao_tu": [
+      "Sơ Lục: Mới cảm động ở ngón chân cái; việc còn nhỏ, chưa rõ hung cát.",
+      "Lục Nhị: Cảm động ở bắp chân mà vội vàng hành động thì hung; biết ở yên giữ mình thì tốt.",
+      "Cửu Tam: Cảm động ở đùi, chỉ muốn chạy theo người khác mà thiếu chủ kiến riêng; tiến tới sẽ đáng tiếc.",
+      "Cửu Tứ: Giữ lòng chính đính thì tốt lành, không còn gì hối hận; sự cảm ứng qua lại chưa định hình rõ ràng.",
+      "Cửu Ngũ: Cảm động ở phần lưng gần tim; sự cảm ứng còn nông cạn nhưng không đáng hối hận.",
+      "Thượng Lục: Cảm động chỉ dừng ở miệng lưỡi; chỉ là lời nói suông, thiếu thực chất."
+    ]
+  },
+  "32": {
+    "thoan_tu": "Hanh, vô cữu, lợi trinh, lợi hữu du vãng (Hanh thông, không lỗi; lợi giữ vững chính đạo, lợi khi có nơi để tiến tới, ý nói về đạo bền vững lâu dài)",
+    "dai_tuong": "Sấm và gió cùng đi với nhau (Lôi Phong Hằng, ý nghĩa bền vững lâu dài): người quân tử noi theo đó mà đứng vững, không thay đổi phương hướng của mình.",
+    "hao_tu": [
+      "Sơ Lục: Vội vàng cầu mong sự bền lâu ngay từ lúc mới bắt đầu; gặp hung.",
+      "Cửu Nhị: Biết giữ mực thước vừa phải, không thái quá; hối hận tiêu tan.",
+      "Cửu Tam: Không giữ vững đức hạnh thường xuyên, có lúc bị chê trách; đáng tiếc nếu cố chấp sai lầm.",
+      "Cửu Tứ: Ở không đúng chỗ, đúng việc; dù cố công cũng không thu được kết quả.",
+      "Lục Ngũ: Giữ đức hạnh bền vững, thuận hòa; tốt cho phận nữ nhưng người quân tử cần biết tùy thời quyết đoán.",
+      "Thượng Lục: Dao động không yên, đánh mất sự bền vững; gặp hung."
+    ]
+  },
+  "33": {
+    "thoan_tu": "Độn: hanh, tiểu lợi trinh (Thời vận suy, người quân tử rút lui giữ mình; giữ vững chính đạo dù trong việc nhỏ vẫn có lợi).",
+    "dai_tuong": "Trời ở trên, núi ở dưới: người quân tử tránh xa kẻ tiểu nhân không phải bằng sự khinh ghét lộ liễu, mà bằng thái độ nghiêm trang, giữ khoảng cách đúng mực.",
+    "hao_tu": [
+      "Sơ Lục: Đang lúc lui mà còn ở phía sau (như đuôi thú), rất nguy hiểm nên đừng vọng động.",
+      "Lục Nhị: Giữ vững ý chí rút lui như dùng dây da bò vàng buộc chặt, không gì lay chuyển được.",
+      "Cửu Tam: Muốn lui mà còn vướng bận, khốn đốn nguy hiểm; chỉ nên đối xử như nuôi tôi tớ thì mới yên, việc lớn thì không kham nổi.",
+      "Cửu Tứ: Người quân tử dù có điều ưa thích vẫn dứt khoát rút lui, đó là điều kẻ tiểu nhân không làm được, nên tốt.",
+      "Cửu Ngũ: Rút lui một cách khéo léo, đúng đắn và kiên định thì tốt lành.",
+      "Thượng Cửu: Rút lui một cách cao khiết, ung dung, không chút do dự, mọi việc đều thuận lợi."
+    ]
+  },
+  "34": {
+    "thoan_tu": "Đại Tráng: lợi trinh (Sức mạnh đang thịnh, nhưng chỉ có lợi khi giữ đúng chính đạo).",
+    "dai_tuong": "Sấm động trên trời, sức mạnh lớn lao: người quân tử nhân đó mà không bao giờ làm điều trái với lễ nghĩa, dù có sức mạnh cũng không lạm dụng.",
+    "hao_tu": [
+      "Sơ Cửu: Khoe sức mạnh ngay từ ngón chân mà vội tiến tới, ắt gặp điều xấu.",
+      "Cửu Nhị: Giữ vững đường lối, đứng ở chỗ trung chính nên tốt lành.",
+      "Cửu Tam: Kẻ tiểu nhân dùng hết sức mạnh, người quân tử biết tiết chế; nếu cứ khoe sức như dê húc giậu ắt bị mắc kẹt, phải cẩn trọng.",
+      "Cửu Tứ: Giữ chính đính thì tốt, hối hận tiêu tan; hàng rào đã mở, sức mạnh tiến lên vững vàng như trục xe lớn.",
+      "Lục Ngũ: Sức mạnh phô trương mất đi trong sự an nhàn, nhưng không có gì phải hối tiếc.",
+      "Thượng Lục: Húc vào giậu mà tiến thoái đều khó khăn, nhưng nếu biết tự xét mình trong hoàn cảnh khó thì lại được tốt lành."
+    ]
+  },
+  "35": {
+    "thoan_tu": "Tấn: người chư hầu được ban tặng nhiều ngựa xe, một ngày ba lần được vua tiếp kiến (biểu thị sự tiến thân thuận lợi, được tin dùng).",
+    "dai_tuong": "Mặt trời mọc lên trên mặt đất: người quân tử nhân đó mà tự làm sáng tỏ thêm đức sáng của mình.",
+    "hao_tu": [
+      "Sơ Lục: Muốn tiến mà còn bị ngăn trở; giữ lòng chính đính, rộng rãi thì không lỗi lầm.",
+      "Lục Nhị: Muốn tiến mà lòng còn lo buồn, nhưng giữ chính đính sẽ được phúc lớn.",
+      "Lục Tam: Được mọi người chung quanh tin cậy, mọi hối hận đều tan biến.",
+      "Cửu Tứ: Tiến lên len lén như chuột chũi, dù giữ chính đính vẫn còn nguy hiểm.",
+      "Lục Ngũ: Không cần bận tâm chuyện được mất, cứ tiến tới ắt tốt lành, mọi việc đều lợi.",
+      "Thượng Cửu: Dùng sức mạnh (như sừng) chỉ để trừng trị kẻ phản loạn trong nhà mình, tuy nguy mà tốt, nhưng vẫn còn điều đáng tiếc."
+    ]
+  },
+  "36": {
+    "thoan_tu": "Minh Di: lợi gian trinh (Ánh sáng bị che khuất, nên biết lường trước khó khăn mà giữ vững chính đạo).",
+    "dai_tuong": "Ánh sáng lặn vào trong lòng đất: người quân tử nhân đó mà trị dân bằng cách giấu bớt sự sáng suốt của mình, không phô trương.",
+    "hao_tu": [
+      "Sơ Cửu: Như chim bay mà cụp cánh, người quân tử thà nhịn ăn mà rút lui còn hơn ở lại chịu điều tiếng.",
+      "Lục Nhị: Bị thương ở đùi trái nhưng nhờ ngựa khỏe mà thoát nạn, được tốt lành.",
+      "Cửu Tam: Như đi săn ở phương nam bắt được kẻ đầu sỏ của bóng tối, nhưng chớ nóng vội muốn sửa hết mọi điều ngay.",
+      "Lục Tứ: Đã lọt sâu vào vùng tối, nhưng vẫn giữ được chí hướng của mình mà tìm đường thoát ra.",
+      "Lục Ngũ: Noi theo gương Cơ Tử (Kỳ Tử) giữ mình chính đính giữa nghịch cảnh thì có lợi.",
+      "Thượng Lục: Vốn từng sáng chói tột đỉnh, nay chìm xuống tăm tối: đây là kết cục của kẻ cầm quyền không giữ được đạo trị nước."
+    ]
+  },
+  "37": {
+    "thoan_tu": "Gia Nhân: lợi nữ trinh (Đạo trị gia, điều lợi nhất là người vợ giữ được sự chính đính, kiên trinh).",
+    "dai_tuong": "Gió sinh ra từ lửa: người quân tử nhân đó mà lời nói có căn cứ đúng sự thật, việc làm luôn nhất quán.",
+    "hao_tu": [
+      "Sơ Cửu: Đặt ra quy củ trong nhà ngay từ đầu thì việc hối hận sau này sẽ không xảy ra.",
+      "Lục Nhị: Người vợ không tự chuyên quyền, chỉ chăm lo việc bếp núc, giữ chính đính thì tốt lành.",
+      "Cửu Tam: Trị gia quá nghiêm khắc tuy có phần đáng lo, nguy hiểm, nhưng cuối cùng vẫn tốt; nếu vợ con cười đùa buông tuồng thì về sau sẽ hối tiếc.",
+      "Lục Tứ: Làm cho gia đình giàu có, đại cát đại lợi.",
+      "Cửu Ngũ: Ân đức của người đứng đầu lan tỏa đến cả gia đình, không cần lo lắng, tự nhiên tốt lành.",
+      "Thượng Cửu: Giữ được lòng thành tín và uy nghiêm, cuối cùng mọi việc đều tốt đẹp."
+    ]
+  },
+  "38": {
+    "thoan_tu": "Khuê: việc nhỏ thì tốt (Trong cảnh chia lìa, bất đồng, chỉ những việc nhỏ mới có thể thành công).",
+    "dai_tuong": "Lửa ở trên, đầm ở dưới, hai đường trái ngược nhau: người quân tử nhân đó mà dù đại đồng vẫn biết chấp nhận sự khác biệt.",
+    "hao_tu": [
+      "Sơ Cửu: Mất ngựa chẳng cần tìm, tự nó sẽ về; gặp kẻ xấu cũng nên giao tiếp để tránh điều oán trách, không có lỗi.",
+      "Cửu Nhị: Tình cờ gặp chủ mình nơi ngõ hẻm, không phải là trái đạo.",
+      "Lục Tam: Xe bị kéo lùi, trâu bị cản, thân còn bị làm nhục, khởi đầu không tốt nhưng về sau lại có kết quả tốt.",
+      "Cửu Tứ: Lẻ loi giữa cảnh chia lìa nhưng gặp được người đồng lòng, cùng nhau kết hợp; tuy nguy mà không lỗi.",
+      "Lục Ngũ: Hối hận tiêu tan, nhờ người thân tín giúp đỡ khăng khít như cắn thủng miếng da, tiến tới ắt có điều đáng mừng.",
+      "Thượng Cửu: Lúc đầu nghi ngờ nhau như thấy heo lấm bùn, quỷ đầy xe, nhưng cuối cùng hiểu ra đó là người thân, mọi nghi ngờ tan biến, tốt lành như mưa thuận."
+    ]
+  },
+  "39": {
+    "thoan_tu": "Kiển: lợi Tây Nam, bất lợi Đông Bắc; lợi kiến đại nhân, trinh cát (Gặp khó khăn, nên đi vào chỗ dễ, tránh chỗ hiểm; gặp được bậc đại nhân và giữ chính đạo thì tốt).",
+    "dai_tuong": "Núi trên, nước dưới, đường đi hiểm trở: người quân tử nhân đó mà quay lại xét mình, trau dồi đức hạnh.",
+    "hao_tu": [
+      "Sơ Lục: Tiến lên sẽ gặp thêm khó khăn, dừng lại đợi thời mới là điều đáng khen.",
+      "Lục Nhị: Là bề tôi trung, gặp khó khăn chồng chất vẫn không vì lợi riêng mình, cuối cùng không có lỗi.",
+      "Cửu Tam: Tiến thì thêm khó, nên lui về hợp sức với người phía dưới.",
+      "Lục Tứ: Tiến thêm khó, nên dừng lại liên kết với người ở trên, giữ vị trí vững chắc.",
+      "Cửu Ngũ: Giữa muôn vàn khó khăn vẫn có bạn bè đến giúp, nhờ đức trung chính mà vượt qua.",
+      "Thượng Lục: Tiến chỉ thêm khó, dừng lại mới có công lớn; nên tìm gặp bậc đại nhân để nương tựa."
+    ]
+  },
+  "40": {
+    "thoan_tu": "Giải: lợi Tây Nam; không có việc phải làm thì trở lại tốt lành, có việc phải làm thì làm sớm mới tốt (Khi khó khăn đã được tháo gỡ, nên trở về ổn định, việc cần làm thì làm ngay).",
+    "dai_tuong": "Sấm và mưa nổi lên: người quân tử nhân đó mà tha thứ lỗi lầm, khoan hồng với người có tội.",
+    "hao_tu": [
+      "Sơ Lục: Ở buổi đầu của sự giải trừ, không có lỗi lầm gì.",
+      "Cửu Nhị: Như đi săn bắt được ba con cáo, lại được mũi tên vàng; giữ chính đính thì tốt lành.",
+      "Lục Tam: Kẻ hèn mà ngồi xe sang, chỉ chuốc lấy trộm cướp tìm đến; dù cố giữ chính cũng khó tránh điều đáng tiếc.",
+      "Cửu Tứ: Bỏ đi kẻ tiểu nhân bám theo (như bỏ ngón chân), bạn tốt sẽ đến, cùng nhau tin cậy.",
+      "Lục Ngũ: Người quân tử ra tay trừ bỏ điều xấu thì tốt lành, kẻ tiểu nhân cũng tự lui.",
+      "Thượng Lục: Như bậc vương hầu giương cung bắn được chim cắt trên tường cao, trừ được mối loạn, mọi việc đều thuận lợi."
+    ]
+  },
+  "41": {
+    "thoan_tu": "Tổn: có lòng thành thì đại cát, không lỗi, có thể giữ chính đính, đi đâu cũng lợi; dù chỉ dùng lễ vật đơn sơ (hai giỏ gạo) mà tế cũng được (Biết giảm bớt cái dư thừa của mình, nếu có lòng thành thì vẫn tốt).",
+    "dai_tuong": "Núi trên, đầm dưới: người quân tử nhân đó mà kìm nén giận dữ, tiết chế dục vọng.",
+    "hao_tu": [
+      "Sơ Cửu: Gác việc riêng để mau đến giúp người khác, không lỗi, nhưng nên cân nhắc mức độ đóng góp cho vừa phải.",
+      "Cửu Nhị: Giữ vững chính đính là lợi, không nên tự ý hành động; giúp người khác mà không hao tổn chính mình.",
+      "Lục Tam: Ba người cùng đi thì bớt một mới hợp, một người đi lại tìm được bạn (ý nói bớt chỗ dư để nên chỗ thiếu).",
+      "Lục Tứ: Nhờ người khác đến giúp mà bớt được bệnh tật, đáng vui mừng, không lỗi.",
+      "Lục Ngũ: Được người khác biếu tặng quý giá, nhận lấy tất được đại cát.",
+      "Thượng Cửu: Đem lợi ích cho người mà không hao tổn phần mình, giữ chính đính thì tốt lành, được nhiều người quy phục giúp sức."
+    ]
+  },
+  "42": {
+    "thoan_tu": "Ích: lợi có sở vãng, lợi thiệp đại xuyên (Được bồi đắp thêm, mọi việc tiến hành đều thuận lợi, kể cả việc lớn khó khăn).",
+    "dai_tuong": "Gió và sấm cùng hợp: người quân tử nhân đó mà thấy điều thiện thì làm theo, thấy lỗi lầm thì sửa ngay.",
+    "hao_tu": [
+      "Sơ Cửu: Ở địa vị thấp mà làm được việc lớn, nếu thật sự tốt đẹp thì không có lỗi.",
+      "Lục Nhị: Được người khác bồi đắp cho nhiều của quý, giữ chính đính thì tốt; vua dùng đức ấy mà tế trời cũng được phúc.",
+      "Lục Tam: Được tăng ích ngay trong lúc khó khăn, nếu giữ lòng thành và đi đúng đường thì không lỗi.",
+      "Lục Tứ: Theo đúng đạo lý, lời khuyên được vua nghe theo, có thể tin cậy trong việc trọng đại như dời đô.",
+      "Cửu Ngũ: Lấy lòng thành mà làm lợi cho người dưới, chắc chắn được đại cát, mọi người đều cảm phục.",
+      "Thượng Cửu: Không ai chịu bồi đắp cho mình, lại còn bị nhiều người công kích vì lòng dạ thất thường, ắt gặp điều xấu."
+    ]
+  },
+  "43": {
+    "thoan_tu": "Quải: cần vạch rõ tội trạng nơi triều đình, thành khẩn kêu gọi mà vẫn ý thức được nguy hiểm; báo cho người trong ấp biết, không nên vội dùng binh; tiến tới thì có lợi (Quyết trừ kẻ xấu cần công khai, thận trọng, không vội vũ lực).",
+    "dai_tuong": "Đầm dâng lên tận trời: người quân tử nhân đó mà ban phát ân huệ cho người dưới, không tích trữ của cải cho riêng mình.",
+    "hao_tu": [
+      "Sơ Cửu: Ỷ mạnh mà hăng hái tiến tới ngay từ đầu, việc khó thành, còn bị chê trách.",
+      "Cửu Nhị: Luôn cảnh giác đề phòng, dù có kẻ hại ngầm ban đêm cũng không cần lo sợ.",
+      "Cửu Tam: Lộ vẻ cương quyết trừ kẻ xấu khiến bị hiểu lầm, cô độc như dầm mưa, nhưng cuối cùng không có lỗi.",
+      "Cửu Tứ: Do dự, tiến lui khó khăn như người bị thương nặng; nếu biết theo số đông mà đi thì hối hận sẽ tan, nhưng tiếc là không chịu nghe lời khuyên.",
+      "Cửu Ngũ: Kẻ xấu như cỏ dại cần nhổ tận gốc một cách cương quyết, giữ đúng đạo trung thì không lỗi.",
+      "Thượng Lục: Không còn ai giúp đỡ, kết cục xấu."
+    ]
+  },
+  "44": {
+    "thoan_tu": "Cấu: người con gái mạnh mẽ, không nên cưới người như vậy (Cảnh gặp gỡ bất chợt giữa âm và dương, cần thận trọng vì sức âm đang lớn dần).",
+    "dai_tuong": "Gió thổi dưới trời: bậc vua chúa nhân đó mà ban bố mệnh lệnh, truyền cáo đi khắp bốn phương.",
+    "hao_tu": [
+      "Sơ Lục: Cần được kìm giữ chặt như buộc vào cái chốt bằng kim loại, giữ chính đính thì tốt; nếu tự ý hành động sẽ gặp điều xấu.",
+      "Cửu Nhị: Giữ chặt như giữ giỏ cá trong tay, không lỗi, nhưng không nên để lọt ra ngoài đãi khách.",
+      "Cửu Tam: Đi lại khó khăn như bị lột da mông, tuy nguy hiểm nhưng không đến mức tội lỗi lớn.",
+      "Cửu Tứ: Giỏ không còn cá, ắt sinh điều xấu, vì đã xa rời dân chúng.",
+      "Cửu Ngũ: Giữ được tài đức mà không phô trương, như cây kỷ tử che bóng cho giàn bầu bên dưới, phúc lành sẽ đến.",
+      "Thượng Cửu: Gặp gỡ ở chỗ cùng cực như húc sừng vào khoảng không, có điều đáng tiếc nhưng không phải là lỗi lớn."
+    ]
+  },
+  "45": {
+    "thoan_tu": "Tụy: vua đến miếu thờ tổ tiên; lợi kiến đại nhân, hanh, lợi trinh; dùng lễ vật lớn thì tốt, đi đâu cũng lợi (Người tụ hợp lại cần có nơi quy tụ tinh thần, gặp bậc hiền tài và giữ chính đạo).",
+    "dai_tuong": "Đầm ở trên mặt đất: người quân tử nhân đó mà sửa sang binh khí, đề phòng những biến cố bất ngờ.",
+    "hao_tu": [
+      "Sơ Lục: Muốn tụ hợp nhưng chưa toại nguyện nên lòng còn rối loạn; nếu biết kêu gọi thì buồn sẽ hóa vui, không lỗi.",
+      "Lục Nhị: Được người trên dẫn dắt mà tụ hợp, giữ lòng thành thì dù lễ vật đơn sơ vẫn được chấp nhận, tốt lành.",
+      "Lục Tam: Muốn tụ hợp mà than thở vì chưa tìm được nơi thích hợp, cứ tiến tới thì không lỗi, chỉ có chút đáng tiếc nhỏ.",
+      "Cửu Tứ: Nếu thật sự đại cát thì không bị trách cứ.",
+      "Cửu Ngũ: Là nơi quy tụ của mọi người ở ngôi cao, không lỗi; nếu chưa được tin tưởng thì càng nên giữ đức lớn, lâu bền, chính đính.",
+      "Thượng Lục: Than thở, khóc lóc vì chưa yên ổn ở ngôi cao, nhưng không có lỗi lầm gì."
+    ]
+  },
+  "46": {
+    "thoan_tu": "Thăng: đại hanh, dùng để gặp bậc đại nhân thì không cần lo lắng, tiến về phương nam thì tốt (Đức nhỏ tích lũy dần mà lớn lên, tiến lên thuận lợi).",
+    "dai_tuong": "Cây mọc lên từ trong lòng đất: người quân tử nhân đó mà thuận theo đức tốt, tích lũy điều nhỏ để nên điều lớn lao, cao đẹp.",
+    "hao_tu": [
+      "Sơ Lục: Được mọi người trên hoan nghênh mà thăng tiến, đại cát.",
+      "Cửu Nhị: Có lòng thành thì dù lễ vật đơn sơ vẫn được chấp nhận, không lỗi.",
+      "Cửu Tam: Thăng tiến vào chỗ như thành trống không người, thuận lợi không trở ngại.",
+      "Lục Tứ: Được vua sai đi tế lễ ở núi Kỳ, tốt lành, không sai sót.",
+      "Lục Ngũ: Giữ chính đính thì được tốt lành, thăng tiến theo đúng từng bậc thềm, thành công lớn.",
+      "Thượng Lục: Thăng tiến một cách mù quáng không tỉnh táo, cần luôn giữ chính đính mới có lợi lâu dài."
+    ]
+  },
+  "47": {
+    "thoan_tu": "Khốn: hanh, trinh; bậc đại nhân giữ chính đính thì tốt, không lỗi; nói nhiều cũng chẳng ai tin (Ở cảnh khốn cùng, người quân tử vẫn có thể hanh thông nếu giữ vững chí khí).",
+    "dai_tuong": "Đầm cạn khô nước: người quân tử nhân đó mà sẵn sàng hy sinh cả tính mạng để giữ trọn chí hướng của mình.",
+    "hao_tu": [
+      "Sơ Lục: Ngồi khốn khổ dưới gốc cây trơ trụi, lạc vào hang tối, ba năm chưa thấy lối ra.",
+      "Cửu Nhị: Khốn đốn giữa rượu thịt đầy đủ, nhưng rồi sẽ được người trên trọng dụng; cứ giữ lòng thành như khi tế lễ thì tốt.",
+      "Lục Tam: Khốn khó trước tảng đá, vin phải gai góc, về nhà mà chẳng thấy vợ, điều này rất xấu.",
+      "Cửu Tứ: Đến chậm vì bị chiếc xe sang cản trở, tuy có điều đáng tiếc nhưng cuối cùng vẫn tốt đẹp.",
+      "Cửu Ngũ: Bị tổn thương nặng, khốn khó bởi chính thuộc hạ của mình, nhưng bình tĩnh, giữ lòng thành thì dần dần sẽ ổn.",
+      "Thượng Lục: Bị vướng víu như dây leo quấn chặt, biết hối lỗi mà thay đổi thì tiến tới sẽ được tốt lành."
+    ]
+  },
+  "48": {
+    "thoan_tu": "Tỉnh: đổi ấp mà không đổi giếng, giếng không cạn không đầy, người qua kẻ lại đều nhờ đó mà dùng; nếu sắp múc được nước mà dây đứt, gàu vỡ thì xấu (Đạo giếng tượng trưng cho nguồn nuôi dưỡng bất biến, cần cẩn trọng đến cùng).",
+    "dai_tuong": "Nước ở trên cây (gàu kéo nước từ giếng): người quân tử nhân đó mà an ủi dân chúng, khuyến khích mọi người giúp đỡ lẫn nhau.",
+    "hao_tu": [
+      "Sơ Lục: Giếng bùn lầy không ai muốn uống, như giếng cũ bị bỏ hoang không chim chóc lui tới.",
+      "Cửu Nhị: Giếng bị rò rỉ, nước chảy mất cho tôm cá, không được người trên giúp đỡ.",
+      "Cửu Tam: Giếng đã được nạo vét sạch mà không ai dùng đến, thật đáng tiếc; nếu vua sáng suốt thì mọi người đều được nhờ.",
+      "Lục Tứ: Giếng được xây lại thành giếng vững chắc, không có lỗi.",
+      "Cửu Ngũ: Giếng trong mát, nước nguồn lạnh trong lành được mọi người thưởng thức.",
+      "Thượng Lục: Nước giếng được kéo lên tận miệng, không nên đậy lại, cần giữ lòng thành thì đại cát."
+    ]
+  },
+  "49": {
+    "thoan_tu": "Cách, dĩ nhật nãi phu, nguyên hanh lợi trinh, hối vong (Sự thay đổi, cải cách chỉ được tin theo khi đã thành công rõ ràng; đại thông thuận lợi nếu giữ chính đạo, hối hận sẽ tiêu tan).",
+    "dai_tuong": "Trong đầm có lửa là tượng của quẻ Cách; người quân tử xem đó mà sửa đổi lịch số, làm sáng tỏ bốn mùa để thuận theo lẽ biến đổi của trời đất.",
+    "hao_tu": [
+      "Sơ Cửu: Còn bị trói buộc như da bò vàng, chưa thể hành động, phải chờ thời.",
+      "Lục Nhị: Đến lúc thích hợp mới thay đổi, hành động thì tốt, không lỗi.",
+      "Cửu Tam: Vội vàng đổi thay thì xấu, phải bàn tính kỹ ba lần mới được tin theo.",
+      "Cửu Tứ: Hối hận tiêu tan, có lòng thành thì dù đổi mệnh cũ vẫn tốt.",
+      "Cửu Ngũ: Bậc đại nhân đổi mới rực rỡ như hổ đổi vằn, đáng tin cậy.",
+      "Thượng Lục: Người quân tử đổi mới như báo đổi đốm, kẻ tiểu nhân chỉ đổi vẻ ngoài; tiến tới thì xấu, giữ vững chính đạo thì tốt."
+    ]
+  },
+  "50": {
+    "thoan_tu": "Đỉnh, nguyên cát, hanh (Đỉnh là vạc quý, biểu tượng của sự nuôi dưỡng và đổi mới; rất tốt lành, hanh thông).",
+    "dai_tuong": "Trên có lửa dưới có gió là tượng quẻ Đỉnh; người quân tử xem đó mà đặt ngay chính vị trí của mình, giữ vững thiên mệnh.",
+    "hao_tu": [
+      "Sơ Lục: Đỉnh lật úp, nhân đó bỏ đi vật xấu bên trong; như thiếp nhờ có con mà được cất nhắc, không lỗi.",
+      "Cửu Nhị: Đỉnh có đầy thức ăn, giữ vững không để kẻ xấu xâm phạm thì tốt.",
+      "Cửu Tam: Tai đỉnh bị đổi khiến việc trì trệ, nhưng mưa xuống thì hối hận tiêu tan, cuối cùng tốt.",
+      "Cửu Tứ: Chân đỉnh gãy, đổ thức ăn của vua ra ngoài, xấu hổ và gặp hung.",
+      "Lục Ngũ: Đỉnh có tai bằng vàng, quai vàng, giữ chính đạo thì có lợi.",
+      "Thượng Cửu: Đỉnh có quai bằng ngọc, rất tốt, mọi việc đều thuận lợi."
+    ]
+  },
+  "51": {
+    "thoan_tu": "Chấn hanh; chấn lai hích hích, tiếu ngôn ách ách (Sấm động đến khiến người ta lo sợ, nhưng sau đó lại cười nói vui vẻ; giữ được sự cẩn trọng như người tế lễ không đánh rơi chén rượu thì hanh thông).",
+    "dai_tuong": "Sấm chồng lên sấm là tượng quẻ Chấn; người quân tử xem đó mà lo sợ tự xét mình, sửa mình cho ngay chính.",
+    "hao_tu": [
+      "Sơ Cửu: Sấm động biết lo sợ, rồi lại cười nói ung dung, tốt lành.",
+      "Lục Nhị: Gặp nguy hiểm, nên bỏ của cải mà lánh lên cao, không cần tìm lại, tự sẽ có lại.",
+      "Lục Tam: Sấm động khiến hoảng loạn, nếu biết nhân đó mà hành động đúng thì không lỗi.",
+      "Cửu Tứ: Giữa cơn chấn động lại sa lầy, không vươn lên được.",
+      "Lục Ngũ: Đi lại giữa nguy hiểm nhưng không mất mát, vẫn có việc để làm.",
+      "Thượng Lục: Kinh hãi ngơ ngác, hành động thì xấu; nếu việc chưa đến thân mình mà biết phòng bị trước thì không lỗi, dù còn bị người thân trách móc."
+    ]
+  },
+  "52": {
+    "thoan_tu": "Cấn kỳ bối, bất hoạch kỳ thân; hành kỳ đình, bất kiến kỳ nhân, vô cữu (Giữ mình yên tĩnh như tựa lưng, quên cả bản thân; đi trong sân mà như không thấy người, không lỗi).",
+    "dai_tuong": "Hai núi chồng lên nhau là tượng quẻ Cấn; người quân tử xem đó mà giữ ý nghĩ của mình không vượt ra ngoài bổn phận, vị trí của mình.",
+    "hao_tu": [
+      "Sơ Lục: Giữ yên từ ngón chân, không lỗi, nên bền giữ chính đạo.",
+      "Lục Nhị: Giữ yên bắp chân, không giúp được người trên mà lòng không vui.",
+      "Cửu Tam: Giữ yên nơi lưng, tách rời với người dưới, nguy hiểm, lòng nóng như lửa đốt.",
+      "Lục Tứ: Giữ yên cả thân mình, không lỗi.",
+      "Lục Ngũ: Giữ yên nơi hàm, lời nói có trật tự, hối hận tiêu tan.",
+      "Thượng Cửu: Giữ yên đến cùng một cách đôn hậu, tốt lành."
+    ]
+  },
+  "53": {
+    "thoan_tu": "Tiệm, nữ quy cát, lợi trinh (Tiệm là tiến dần từng bước như việc gả con gái, tốt lành; giữ chính đạo thì có lợi).",
+    "dai_tuong": "Trên núi có cây là tượng quẻ Tiệm; người quân tử xem đó mà ở đời một cách hiền đức, tu dưỡng phong tục tốt đẹp dần dần.",
+    "hao_tu": [
+      "Sơ Lục: Nhạn dần đến bờ nước, người trẻ gặp nguy khó, bị chê trách nhưng không lỗi.",
+      "Lục Nhị: Nhạn dần đến tảng đá, ăn uống vui vẻ, tốt lành.",
+      "Cửu Tam: Nhạn dần đến đất bằng, như chồng đi không về, vợ mang thai không nuôi được con, xấu; nhưng lợi cho việc chống giữ.",
+      "Lục Tứ: Nhạn dần đến cây, có thể đậu trên cành phẳng, không lỗi.",
+      "Cửu Ngũ: Nhạn dần đến gò cao, ba năm chưa toại nguyện nhưng cuối cùng vẫn thuận theo lẽ tự nhiên, tốt.",
+      "Thượng Cửu: Nhạn dần đến núi cao, lông cánh dùng làm đồ trang sức, tốt lành."
+    ]
+  },
+  "54": {
+    "thoan_tu": "Quy Muội, chinh hung, vô du lợi (Việc gả em gái đi làm thiếp, nếu cứ hành động thì xấu, không có gì lợi).",
+    "dai_tuong": "Trên đầm có sấm là tượng quẻ Quy Muội; người quân tử xem đó mà thấy rõ sự tổn hại lâu dài của việc thiếu chính đáng, biết dè dặt giữ đạo thường.",
+    "hao_tu": [
+      "Sơ Cửu: Gả đi làm thiếp, như người khập khiễng vẫn có thể đi được, tiến tới thì tốt.",
+      "Cửu Nhị: Như người chột một mắt vẫn còn nhìn được, giữ chính đạo của người cô phụ thì có lợi.",
+      "Lục Tam: Gả đi ở địa vị thấp kém, đành quay về nhận phận làm thiếp.",
+      "Cửu Tứ: Việc gả đi bị trì hoãn, chậm nhưng rồi cũng đến lúc thành.",
+      "Lục Ngũ: Gả em gái mà khiêm nhường giản dị hơn cả người theo hầu, như trăng gần tròn, tốt lành.",
+      "Thượng Lục: Người con gái bưng giỏ mà không có gì trong đó, người chồng giết dê mà không có huyết, không có lợi gì."
+    ]
+  },
+  "55": {
+    "thoan_tu": "Phong hanh, vương cách chi, vật ưu, nghi nhật trung (Phong là thời thịnh lớn, hanh thông; bậc vương giả đạt tới cảnh thịnh này không cần lo lắng, nên như mặt trời đứng bóng, chiếu sáng khắp nơi).",
+    "dai_tuong": "Sấm và chớp cùng đến là tượng quẻ Phong; người quân tử xem đó mà xét đoán việc kiện tụng, thi hành hình phạt cho đúng đắn, sáng suốt.",
+    "hao_tu": [
+      "Sơ Cửu: Gặp được người đồng đạo giúp đỡ, không lỗi, tiến tới sẽ được khen.",
+      "Lục Nhị: Bị che khuất quá dày đến mức giữa trưa vẫn thấy sao Bắc Đẩu, nên giữ lòng thành để cảm hóa thì tốt.",
+      "Cửu Tam: Bị che khuất còn hơn thế, như gãy tay phải, nhưng không lỗi.",
+      "Cửu Tứ: Bị che khuất giữa trưa như ban đêm, nhưng gặp được người đồng chí thì tốt.",
+      "Lục Ngũ: Đem về những người tài giỏi sáng suốt, đáng mừng, tốt lành.",
+      "Thượng Lục: Nhà cửa to lớn nhưng chỉ để tự che mình, nhìn ra cửa vắng lặng không người, lâu ngày không thấy ai, xấu."
+    ]
+  },
+  "56": {
+    "thoan_tu": "Lữ, tiểu hanh, lữ trinh cát (Cảnh lữ khách chỉ đạt được sự hanh thông nhỏ; người đi xa giữ chính đạo thì tốt).",
+    "dai_tuong": "Trên núi có lửa là tượng quẻ Lữ; người quân tử xem đó mà thận trọng, sáng suốt khi dùng hình phạt, không để việc kiện tụng kéo dài.",
+    "hao_tu": [
+      "Sơ Lục: Lữ khách nhỏ nhen, tự chuốc lấy tai họa cho mình.",
+      "Lục Nhị: Lữ khách có nơi trú ngụ, có của cải mang theo và người giúp việc trung thành.",
+      "Cửu Tam: Lữ khách đốt mất nơi trú, mất người giúp việc, dù giữ chính đạo vẫn nguy.",
+      "Cửu Tứ: Lữ khách có chỗ tạm nghỉ, có của cải và phương tiện, nhưng lòng vẫn chưa yên.",
+      "Lục Ngũ: Bắn chim trĩ, mất mũi tên nhưng cuối cùng được khen thưởng, có địa vị.",
+      "Thượng Cửu: Như chim tự đốt tổ, lữ khách trước cười sau khóc, mất bò một cách dễ dàng, xấu."
+    ]
+  },
+  "57": {
+    "thoan_tu": "Tốn, tiểu hanh, lợi hữu du vãng, lợi kiến đại nhân (Tốn là thuận theo, chỉ hanh thông nhỏ; có lợi khi tiến hành công việc, có lợi khi gặp bậc đại nhân).",
+    "dai_tuong": "Gió nối tiếp gió là tượng quẻ Tốn; người quân tử xem đó mà truyền đạt mệnh lệnh, thi hành mọi việc một cách thấu đáo.",
+    "hao_tu": [
+      "Sơ Lục: Tiến lui không quyết, nên giữ sự cương quyết như người lính thì có lợi.",
+      "Cửu Nhị: Ẩn mình dưới giường, dùng nhiều thầy cúng thầy bói, tuy có vẻ rối rắm nhưng tốt, không lỗi.",
+      "Cửu Tam: Cố sức thuận theo một cách gượng ép nhiều lần, đáng tiếc.",
+      "Lục Tứ: Hối hận tiêu tan, đi săn được nhiều loại thú.",
+      "Cửu Ngũ: Giữ chính đạo thì tốt, hối hận tiêu tan; trước không tốt sau tốt, xem xét kỹ trước sau khi thay đổi thì tốt.",
+      "Thượng Cửu: Ẩn dưới giường mà mất cả rìu quyết đoán, dù chính đáng vẫn xấu."
+    ]
+  },
+  "58": {
+    "thoan_tu": "Đoài, hanh, lợi trinh (Đoài là niềm vui, hanh thông; giữ chính đạo thì có lợi).",
+    "dai_tuong": "Hai đầm nước nối liền nhau là tượng quẻ Đoài; người quân tử xem đó mà cùng bạn bè giảng tập học hỏi, trao đổi lẫn nhau.",
+    "hao_tu": [
+      "Sơ Cửu: Niềm vui hòa hợp tự trong lòng, tốt lành.",
+      "Cửu Nhị: Niềm vui từ lòng thành thật, tốt, hối hận tiêu tan.",
+      "Lục Tam: Đi tìm niềm vui từ bên ngoài, xấu.",
+      "Cửu Tứ: Cân nhắc giữa các niềm vui, chưa yên lòng, gần điều hại nhưng vẫn có điều đáng mừng.",
+      "Cửu Ngũ: Tin tưởng kẻ có thể làm hại mình, tình thế nguy hiểm.",
+      "Thượng Lục: Lấy niềm vui để dẫn dắt, lôi kéo người khác."
+    ]
+  },
+  "59": {
+    "thoan_tu": "Hoán hanh, vương cách hữu miếu, lợi thiệp đại xuyên, lợi trinh (Thời ly tán vẫn hanh thông; vua đến tông miếu, có lợi khi vượt sông lớn, có lợi khi giữ chính đạo).",
+    "dai_tuong": "Gió thổi trên nước là tượng quẻ Hoán; bậc vương giả xem đó mà tế trời, dựng miếu thờ để quy tụ lòng người đang ly tán.",
+    "hao_tu": [
+      "Sơ Lục: Ra tay cứu giúp lúc mới ly tán, nhờ có ngựa khỏe giúp sức, tốt.",
+      "Cửu Nhị: Giữa lúc ly tán vội tìm nơi nương tựa, hối hận tiêu tan.",
+      "Lục Tam: Không tiếc thân mình mà lo cho việc chung, không có gì đáng hối hận.",
+      "Lục Tứ: Biết phân tán bè đảng riêng tư để quy tụ điều thiện, đại cát.",
+      "Cửu Ngũ: Ban bố mệnh lệnh lớn lao như mồ hôi tuôn ra, phân phát của cải tích trữ, không lỗi.",
+      "Thượng Cửu: Rời xa hiểm họa, thoát khỏi lo sợ và thương tổn, không lỗi."
+    ]
+  },
+  "60": {
+    "thoan_tu": "Tiết hanh; khổ tiết bất khả trinh (Sự tiết chế đúng mực thì hanh thông; nhưng tiết chế quá khắc khổ thì không thể giữ mãi được).",
+    "dai_tuong": "Trên đầm có nước là tượng quẻ Tiết; người quân tử xem đó mà đặt ra số độ, chế định lễ nghi và đạo đức cho phù hợp.",
+    "hao_tu": [
+      "Sơ Cửu: Không ra khỏi sân ngoài cửa, không lỗi.",
+      "Cửu Nhị: Không ra khỏi sân trong cửa, bỏ lỡ thời cơ, xấu.",
+      "Lục Tam: Không biết tiết chế, ắt có điều đáng tiếc, nhưng không thể trách ai khác.",
+      "Lục Tứ: An nhiên theo đúng tiết độ, hanh thông.",
+      "Cửu Ngũ: Vui vẻ thực hành sự tiết chế, tốt lành, được người khác khen ngợi.",
+      "Thượng Lục: Tiết chế quá khắc nghiệt, dù giữ chính đạo vẫn xấu, nhưng biết hối cải thì tai họa sẽ tiêu tan."
+    ]
+  },
+  "61": {
+    "thoan_tu": "Trung Phu, đồn ngư cát, lợi thiệp đại xuyên, lợi trinh (Lòng thành tín cảm hóa được cả loài lợn cá, tốt lành; có lợi khi vượt sông lớn, có lợi khi giữ chính đạo).",
+    "dai_tuong": "Trên đầm có gió là tượng quẻ Trung Phu; người quân tử xem đó mà bàn xét việc hình ngục một cách công minh, khoan hoãn để tránh oan sai.",
+    "hao_tu": [
+      "Sơ Cửu: Giữ lòng an định, tốt lành; nếu tìm cầu nơi khác sẽ không được yên.",
+      "Cửu Nhị: Như chim hạc gọi con nơi kín đáo, chim con hòa theo; lòng thành tín cảm ứng lẫn nhau.",
+      "Lục Tam: Gặp được bạn đồng lòng, khi vui khi buồn thất thường.",
+      "Lục Tứ: Như trăng gần tròn, như ngựa mất bạn đồng hành, không lỗi.",
+      "Cửu Ngũ: Lòng thành tín vững chắc, ràng buộc mọi người, không lỗi.",
+      "Thượng Cửu: Như gà trống muốn bay lên trời, dù giữ chính đạo vẫn xấu vì đã thái quá."
+    ]
+  },
+  "62": {
+    "thoan_tu": "Tiểu Quá hanh, lợi trinh; khả tiểu sự, bất khả đại sự (Hơi thái quá thì vẫn hanh thông, có lợi khi giữ chính đạo; chỉ nên làm việc nhỏ, không nên làm việc lớn).",
+    "dai_tuong": "Trên núi có sấm là tượng quẻ Tiểu Quá; người quân tử xem đó mà hành động cung kính hơi thái quá, để tang thương xót hơn mức thường, dùng của cải tiết kiệm hơn mức thường.",
+    "hao_tu": [
+      "Sơ Lục: Chim bay vượt quá cao, gặp xấu.",
+      "Lục Nhị: Đi qua ông rồi gặp bà, không xâm phạm vua mà theo đúng phận bề tôi, không lỗi.",
+      "Cửu Tam: Không đề phòng cẩn thận nên bị hại, xấu.",
+      "Cửu Tứ: Không lỗi, gặp việc mà không thái quá, nhưng tiến tới thì nguy nên phải cẩn trọng.",
+      "Lục Ngũ: Mây dày mà không mưa, như vua giương cung tìm mồi trong hang.",
+      "Thượng Lục: Không gặp thời mà cứ vượt quá, như chim bay quá cao, xấu, đó là tai họa tự mình gây ra."
+    ]
+  },
+  "63": {
+    "thoan_tu": "Ký Tế hanh tiểu, lợi trinh; sơ cát chung loạn (Việc đã hoàn thành, hanh thông ở việc nhỏ, có lợi khi giữ chính đạo; ban đầu tốt nhưng về sau có thể sinh loạn).",
+    "dai_tuong": "Trên lửa có nước là tượng quẻ Ký Tế; người quân tử xem đó mà nghĩ đến hoạn nạn có thể xảy ra mà đề phòng trước.",
+    "hao_tu": [
+      "Sơ Cửu: Kéo lại bánh xe, như cáo bị ướt đuôi, biết thận trọng nên không lỗi.",
+      "Lục Nhị: Như người vợ mất tấm che xe, không cần đi tìm, tự sẽ có lại.",
+      "Cửu Tam: Như vua đánh dẹp vùng xa phải ba năm mới thắng; kẻ tiểu nhân không nên dùng vào việc lớn.",
+      "Lục Tứ: Có vải rách để phòng khi thuyền bị dột, phải đề phòng suốt ngày.",
+      "Cửu Ngũ: Cúng tế hậu hĩ chưa chắc bằng cúng tế đơn giản mà thành tâm, được phúc.",
+      "Thượng Lục: Bị ướt đến đầu, tình thế nguy hiểm."
+    ]
+  },
+  "64": {
+    "thoan_tu": "Vị Tế hanh; tiểu hồ ngật tế, nhu kỳ vĩ, vô du lợi (Việc chưa hoàn thành nhưng vẫn hanh thông; như con cáo nhỏ gần qua sông mà bị ướt đuôi, không có lợi gì).",
+    "dai_tuong": "Trên nước có lửa là tượng quẻ Vị Tế; người quân tử xem đó mà thận trọng phân biệt sự vật, đặt để mỗi thứ đúng chỗ của nó.",
+    "hao_tu": [
+      "Sơ Lục: Như cáo bị ướt đuôi, đáng tiếc vì hành động khi chưa đủ điều kiện.",
+      "Cửu Nhị: Kéo lại bánh xe, giữ chính đạo thì tốt.",
+      "Lục Tam: Việc chưa xong mà vội tiến tới thì xấu, nhưng lợi cho việc vượt sông lớn.",
+      "Cửu Tứ: Giữ chính đạo thì tốt, hối hận tiêu tan; cố gắng hành động như đi đánh dẹp vùng xa, ba năm được ban thưởng.",
+      "Lục Ngũ: Giữ chính đạo thì tốt, không hối hận; có đức sáng suốt và lòng thành tín, tốt lành.",
+      "Thượng Cửu: Uống rượu trong niềm tin tưởng, không lỗi; nhưng nếu quá đà đến mức ướt đầu thì mất đi lẽ phải."
+    ]
+  }
+}

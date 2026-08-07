@@ -1,0 +1,106 @@
+[
+  {
+    "code": "cAN",
+    "name": "Càn",
+    "lines": [
+      1,
+      1,
+      1
+    ],
+    "nguyen_so": 1,
+    "ngu_hanh": "Kim",
+    "direction": "Tây Bắc",
+    "weather_meaning": "Trời quang, nắng ráo"
+  },
+  {
+    "code": "doai",
+    "name": "Đoài",
+    "lines": [
+      1,
+      1,
+      0
+    ],
+    "nguyen_so": 2,
+    "ngu_hanh": "Kim",
+    "direction": "Tây",
+    "weather_meaning": "Mưa nhỏ, ẩm ướt"
+  },
+  {
+    "code": "ly",
+    "name": "Ly",
+    "lines": [
+      1,
+      0,
+      1
+    ],
+    "nguyen_so": 3,
+    "ngu_hanh": "Hỏa",
+    "direction": "Nam",
+    "weather_meaning": "Nắng nóng, oi bức"
+  },
+  {
+    "code": "chan",
+    "name": "Chấn",
+    "lines": [
+      1,
+      0,
+      0
+    ],
+    "nguyen_so": 4,
+    "ngu_hanh": "Mộc",
+    "direction": "Đông",
+    "weather_meaning": "Sấm động, giông gió"
+  },
+  {
+    "code": "ton",
+    "name": "Tốn",
+    "lines": [
+      0,
+      1,
+      1
+    ],
+    "nguyen_so": 5,
+    "ngu_hanh": "Mộc",
+    "direction": "Đông Nam",
+    "weather_meaning": "Có gió, gió mạnh"
+  },
+  {
+    "code": "kham",
+    "name": "Khảm",
+    "lines": [
+      0,
+      1,
+      0
+    ],
+    "nguyen_so": 6,
+    "ngu_hanh": "Thủy",
+    "direction": "Bắc",
+    "weather_meaning": "Mưa, sương mù, ẩm ướt"
+  },
+  {
+    "code": "can2",
+    "name": "Cấn",
+    "lines": [
+      0,
+      0,
+      1
+    ],
+    "nguyen_so": 7,
+    "ngu_hanh": "Thổ",
+    "direction": "Đông Bắc",
+    "weather_meaning": "Mây che, có lúc tạnh ráo"
+  },
+  {
+    "code": "khon",
+    "name": "Khôn",
+    "lines": [
+      0,
+      0,
+      0
+    ],
+    "nguyen_so": 8,
+    "ngu_hanh": "Thổ",
+    "direction": "Tây Nam",
+    "weather_meaning": "Âm u, nhiều mây"
+  }
+]

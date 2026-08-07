@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Lịch sử gieo quẻ{% endblock %}
+{% block content %}
+<h1>Lịch sử gieo quẻ</h1>
+{% if items %}
+<ul class="history-list">
+  {% for r in items %}
+  <li>
+    <a href="{{ url_for('divination.detail', record_id=r.id) }}">
+      {{ m.render_lines(r.main_lines) }}
+      <div>
+        <div class="hexagram-card-name">{{ r.hexagram_main.number }}. {{ r.hexagram_main.name }}
+          {% if r.hexagram_changed %} → {{ r.hexagram_changed.number }}. {{ r.hexagram_changed.name }}{% endif %}</div>
+        <div class="muted">{{ r.created_at[:16] }} &middot; {{ "Mai Hoa" if r.method == "mai_hoa" else "Nhập tay" }}
+          {% if r.question %} &middot; {{ r.question }}{% endif %}</div>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">Chưa có lần gieo quẻ nào. <a href="{{ url_for('divination.form') }}">Gieo quẻ ngay</a>.</p>
+{% endif %}
+{% endblock %}

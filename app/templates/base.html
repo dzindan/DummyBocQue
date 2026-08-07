@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Kinh Dịch{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{{ url_for('home.index') }}">☯ Kinh Dịch</a>
+    <nav>
+      <a href="{{ url_for('hexagram.list_hexagrams') }}">Tra cứu 64 quẻ</a>
+      <a href="{{ url_for('divination.form') }}">Gieo quẻ</a>
+      <a href="{{ url_for('divination.history') }}">Lịch sử</a>
+      <a href="{{ url_for('notes.list_notes') }}">Ghi chú</a>
+      <a href="{{ url_for('study.quiz') }}">Học tập</a>
+    </nav>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="footer">Kinh Dịch App v{{ app_version }}</footer>
+</body>
+</html>

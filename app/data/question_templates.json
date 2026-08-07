@@ -1,0 +1,12 @@
+[
+  {"category": "Công việc", "text": "Hôm nay công việc có thuận lợi không?"},
+  {"category": "Công việc", "text": "Có nên nhận dự án/công việc này không?"},
+  {"category": "Tình cảm", "text": "Mối quan hệ này sẽ tiến triển ra sao?"},
+  {"category": "Sức khỏe", "text": "Sức khỏe thời gian tới thế nào?"},
+  {"category": "Tài chính", "text": "Có nên chi tiêu/đầu tư khoản này không?"},
+  {"category": "Gia đình", "text": "Việc gia đình hôm nay có thuận không?"},
+  {"category": "Học tập/Thi cử", "text": "Kỳ thi/việc học sắp tới có thuận lợi không?"},
+  {"category": "Quyết định chung", "text": "Có nên tiến hành việc này không?"},
+  {"category": "Thời tiết", "text": "Hôm nay/ngày mai trời có mưa không?"},
+  {"category": "Xuất hành", "text": "Hôm nay đi hướng nào thuận lợi?"}
+]

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}64 quẻ Kinh Dịch{% endblock %}
+{% block content %}
+<h1>64 quẻ Kinh Dịch</h1>
+<form class="search-form" method="get">
+  <input type="text" name="q" value="{{ query }}" placeholder="Tìm theo tên hoặc số thứ tự...">
+  <button type="submit">Tìm</button>
+</form>
+<div class="hexagram-grid">
+  {% for h in hexagrams %}
+  <a class="hexagram-card" href="{{ url_for('hexagram.detail', number=h.number) }}">
+    {{ m.render_lines(h.lines) }}
+    <div class="hexagram-card-name">{{ h.number }}. {{ h.name }}</div>
+  </a>
+  {% else %}
+  <p class="muted">Không tìm thấy quẻ nào.</p>
+  {% endfor %}
+</div>
+{% endblock %}

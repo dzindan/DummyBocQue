@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Học tập — Quiz 64 quẻ{% endblock %}
+{% block content %}
+<h1>Học tập: đoán tên quẻ</h1>
+<p class="muted">Nhìn hình quẻ, chọn đúng tên trong 4 phương án. Điểm: <span id="score">0</span>/<span id="total">0</span></p>
+
+<div class="quiz-box">
+  <div id="quiz-lines"></div>
+  <div id="quiz-options" class="quiz-options"></div>
+  <p id="quiz-feedback"></p>
+  <button type="button" class="btn" id="next-btn">Câu tiếp theo</button>
+</div>
+
+<script>
+const HEXAGRAMS = {{ hexagrams_json|safe }};
+let current = null;
+let score = 0, total = 0;
+
+function renderBars(lines) {
+  const container = document.createElement("div");
+  container.className = "hexagram-bars";
+  for (let i = lines.length - 1; i >= 0; i--) {
+    const bar = document.createElement("div");
+    bar.className = "bar " + (lines[i] === 1 ? "yang" : "yin");
+    const seg1 = document.createElement("span");
+    seg1.className = "seg" + (lines[i] === 1 ? " full" : "");
+    bar.appendChild(seg1);
+    if (lines[i] !== 1) {
+      const seg2 = document.createElement("span");
+      seg2.className = "seg";
+      bar.appendChild(seg2);
+    }
+    container.appendChild(bar);
+  }
+  return container;
+}
+
+function pickDistractors(correct, n) {
+  const pool = HEXAGRAMS.filter(h => h.number !== correct.number);
+  const picked = [];
+  while (picked.length < n && pool.length) {
+    const idx = Math.floor(Math.random() * pool.length);
+    picked.push(pool.splice(idx, 1)[0]);
+  }
+  return picked;
+}
+
+function nextQuestion() {
+  document.getElementById("quiz-feedback").textContent = "";
+  current = HEXAGRAMS[Math.floor(Math.random() * HEXAGRAMS.length)];
+  const linesDiv = document.getElementById("quiz-lines");
+  linesDiv.innerHTML = "";
+  linesDiv.appendChild(renderBars(current.lines));
+
+  const options = [current, ...pickDistractors(current, 3)];
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+  }
+
+  const optionsDiv = document.getElementById("quiz-options");
+  optionsDiv.innerHTML = "";
+  options.forEach(opt => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "btn secondary quiz-option";
+    btn.textContent = opt.number + ". " + opt.name;
+    btn.addEventListener("click", () => answer(opt, btn));
+    optionsDiv.appendChild(btn);
+  });
+}
+
+function answer(opt, btn) {
+  total += 1;
+  document.getElementById("total").textContent = total;
+  const feedback = document.getElementById("quiz-feedback");
+  if (opt.number === current.number) {
+    score += 1;
+    document.getElementById("score").textContent = score;
+    feedback.textContent = "Đúng!";
+    feedback.className = "correct";
+  } else {
+    feedback.textContent = "Sai — đáp án đúng là " + current.number + ". " + current.name;
+    feedback.className = "wrong";
+  }
+  document.querySelectorAll(".quiz-option").forEach(b => b.disabled = true);
+}
+
+document.getElementById("next-btn").addEventListener("click", nextQuestion);
+nextQuestion();
+</script>
+{% endblock %}
