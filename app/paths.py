@@ -19,9 +19,20 @@ def get_bundle_dir() -> str:
 def get_app_data_dir() -> str:
     """Writable directory for divination history, notes, custom question
     templates. Always outside the exe/bundle so it works even when the exe
-    sits in a read-only location like Program Files."""
-    base = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")
-    data_dir = os.path.join(base, "KinhDichApp")
+    sits in a read-only location like Program Files.
+
+    On Vercel (and other serverless hosts with a read-only filesystem),
+    only /tmp is writable, and it's ephemeral - wiped between cold starts,
+    not shared across instances. That means history/notes saved on a
+    Vercel deployment won't persist reliably; this just keeps the app
+    from crashing there. A real deployment needing durable storage should
+    swap in a proper StorageBackend (e.g. a hosted DB) instead.
+    """
+    if os.environ.get("VERCEL"):
+        data_dir = "/tmp/kinhdichapp"
+    else:
+        base = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")
+        data_dir = os.path.join(base, "KinhDichApp")
     os.makedirs(data_dir, exist_ok=True)
     return data_dir
 
