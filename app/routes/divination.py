@@ -2,7 +2,7 @@ from datetime import datetime
 
 from flask import Blueprint, abort, redirect, render_template, request, url_for
 
-from ..kinhdich import data_repo, maihoa, manual_cast, records
+from ..kinhdich import data_repo, luc_hao, maihoa, manual_cast, phan_tich, records, the_dung
 
 bp = Blueprint("divination", __name__)
 
@@ -112,7 +112,17 @@ def detail(record_id):
     record = records.get_divination(record_id)
     if not record:
         abort(404)
-    return render_template("divination_detail.html", record=_enrich(record))
+    record = _enrich(record)
+    the_dung_result = the_dung.phan_tich(
+        record["hexagram_main"], record["hexagram_changed"], record["moving_positions"]
+    )
+    cast_date = datetime.fromisoformat(record["input_datetime"])
+    luc_hao_result = luc_hao.phan_tich(record["hexagram_main"]["number"], cast_date)
+    hao_vi = phan_tich.hao_vi(record["hexagram_main"]["lines"])
+    return render_template(
+        "divination_detail.html",
+        record=record, the_dung=the_dung_result, luc_hao=luc_hao_result, hao_vi=hao_vi,
+    )
 
 
 @bp.route("/lich-su/<record_id>/ghi-chu", methods=["POST"])

@@ -147,3 +147,19 @@ body {
 .quiz-option:disabled { opacity: 0.6; cursor: default; }
 #quiz-feedback.correct { color: #2e7d32; font-weight: 600; }
 #quiz-feedback.wrong { color: var(--accent); font-weight: 600; }
+
+.hao-vi-table { width: 100%; max-width: 560px; border-collapse: collapse; margin: 12px 0; }
+.hao-vi-table th, .hao-vi-table td {
+  text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); font-size: 0.9rem;
+}
+.hao-vi-table th { color: var(--muted); font-weight: 600; }
+
+.related-hexagrams { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.related-hexagrams .hexagram-card { width: 140px; }
+.related-hexagrams .hexagram-bars .bar { width: 60px; }
+
+.the-dung-box { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+.the-dung-row { display: flex; gap: 24px; margin: 10px 0; flex-wrap: wrap; }
+.the-dung-col { text-align: center; }
+.the-dung-col .hexagram-bars .bar { width: 50px; }
+.the-dung-verdict { font-weight: 600; }

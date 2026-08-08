@@ -142,6 +142,15 @@ def build_hexagrams(trigrams_by_code):
             "thoan_tu": content.get("thoan_tu", ""),
             "dai_tuong": content.get("dai_tuong", ""),
             "hao_tu": content.get("hao_tu", []),
+            # Thoán Truyện / Tiểu Tượng: unlike thoan_tu/dai_tuong/hao_tu
+            # above (grounded in the public-domain Legge translation),
+            # these are AI-composed analysis from classical trigram
+            # theory - the source commentary pages weren't reachable, so
+            # this is not verified classical wording. Flagged separately
+            # in the UI (see hexagram_detail.html) rather than presented
+            # as translated kinh văn.
+            "thoan_truyen": content.get("thoan_truyen", ""),
+            "tieu_tuong": content.get("tieu_tuong", []),
             "content_status": "aggregated" if content else "pending",
         })
     return out

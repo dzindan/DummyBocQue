@@ -28,9 +28,87 @@
       {% endfor %}
     </ul>
     {% endif %}
+
+    {% if hexagram.thoan_truyen or hexagram.tieu_tuong %}
+    <p class="note-box">Phần bên dưới (Thoán Truyện, Tiểu Tượng) là <strong>phân tích tổng hợp theo lý thuyết quái tượng cổ điển</strong>, không phải bản dịch kinh văn đã đối chiếu nguồn gốc như Thoán từ/Hào từ ở trên — mang tính tham khảo.</p>
+    {% if hexagram.thoan_truyen %}
+    <h3>Thoán Truyện</h3>
+    <p>{{ hexagram.thoan_truyen }}</p>
+    {% endif %}
+    {% if hexagram.tieu_tuong %}
+    <h3>Tiểu Tượng</h3>
+    <ul>
+      {% for t in hexagram.tieu_tuong %}
+      <li>{{ t }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endif %}
     {% endif %}
   </div>
 </div>
+
+<section>
+  <h2>Phân tích cấu trúc quẻ</h2>
+  <p class="muted">Hào vị tính thuần túy theo vị trí âm dương của quẻ (không phụ thuộc nguồn ngoài): vị trí lẻ (1,3,5) là dương vị, vị trí chẵn (2,4,6) là âm vị; hào 2 và 5 là "đắc trung"; hào 1&ndash;4, 2&ndash;5, 3&ndash;6 là cặp "ứng".</p>
+  <table class="hao-vi-table">
+    <thead>
+      <tr><th>Hào</th><th>Đắc vị</th><th>Trung</th><th>Ứng với</th></tr>
+    </thead>
+    <tbody>
+      {% for hv in hao_vi|reverse %}
+      <tr>
+        <td>{{ hv.label }}</td>
+        <td>{{ "Đắc vị" if hv.dac_vi else "Thất vị" }}</td>
+        <td>{{ "Đắc trung" if hv.trung else "" }}</td>
+        <td>Hào {{ hv.ung_voi }} &mdash; {{ "Chính ứng" if hv.chinh_ung else "Bất ứng" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="related-hexagrams">
+    <a class="hexagram-card" href="{{ url_for('hexagram.detail', number=que_ho.number) }}">
+      {{ m.render_lines(que_ho.lines) }}
+      <div class="hexagram-card-name">Quẻ Hỗ<br>{{ que_ho.number }}. {{ que_ho.name }}</div>
+    </a>
+    <a class="hexagram-card" href="{{ url_for('hexagram.detail', number=que_doi.number) }}">
+      {{ m.render_lines(que_doi.lines) }}
+      <div class="hexagram-card-name">Quẻ Đối<br>{{ que_doi.number }}. {{ que_doi.name }}</div>
+    </a>
+    <a class="hexagram-card" href="{{ url_for('hexagram.detail', number=que_thac.number) }}">
+      {{ m.render_lines(que_thac.lines) }}
+      <div class="hexagram-card-name">Quẻ Thác<br>{{ que_thac.number }}. {{ que_thac.name }}</div>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Lục Hào (Bốc Phệ Kinh Phòng)</h2>
+  <p class="muted">
+    Quẻ thuộc <strong>{{ luc_hao.palace.palace_name }} cung ({{ luc_hao.palace.palace_ngu_hanh }})</strong>
+    ({{ luc_hao.palace.step_label }}) &middot;
+    Thế tại hào {{ luc_hao.palace.the_hao }}, Ứng tại hào {{ luc_hao.palace.ung_hao }}.
+  </p>
+  <table class="hao-vi-table">
+    <thead>
+      <tr><th>Hào</th><th>Nạp Giáp</th><th>Ngũ hành</th><th>Lục Thân</th><th>Lục Thần (theo hôm nay)</th><th></th></tr>
+    </thead>
+    <tbody>
+      {% for l in luc_hao.lines|reverse %}
+      <tr>
+        <td>{{ hao_vi[l.position - 1].label }}</td>
+        <td>{{ l.can }} {{ l.chi }}</td>
+        <td>{{ l.chi_ngu_hanh }}</td>
+        <td>{{ l.luc_than }}</td>
+        <td>{{ l.luc_than_spirit }}</td>
+        <td>{{ "Thế" if l.la_the else ("Ứng" if l.la_ung else "") }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="muted">Lục Thân tính theo ngũ hành nạp chi của hào so với ngũ hành bổn cung; Lục Thần tính theo Thiên Can của ngày xem (ở đây lấy ngày hôm nay làm ví dụ - khi xem trong kết quả gieo quẻ thực tế sẽ tính theo đúng ngày gieo quẻ).</p>
+</section>
 
 <section>
   <h2>Ghi chú cá nhân</h2>
