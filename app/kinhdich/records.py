@@ -1,7 +1,13 @@
 """User-generated data: divination history, personal notes, and custom
-question templates. Persisted via the storage backend (local JSON file
-per key) - see app/storage. Bundled reference data (trigrams, hexagrams,
-built-in question templates) lives in data_repo instead.
+question templates. Persisted via the storage backend - see app/storage
+(local JSON file per key for desktop/local dev, or Supabase's shared
+kv_store table when SUPABASE_URL/SUPABASE_KEY are set, e.g. on Vercel).
+Bundled reference data (trigrams, hexagrams, built-in question templates)
+lives in data_repo instead.
+
+Keys are prefixed "kinhdich_" because the Supabase project's kv_store
+table is shared with Tu Vi App (same generic schema, same project) - the
+prefix keeps the two apps' data from colliding.
 """
 
 import uuid
@@ -9,9 +15,9 @@ from datetime import datetime, timezone
 
 from ..storage import get_backend
 
-DIVINATIONS_KEY = "divinations"
-NOTES_KEY = "notes"
-CUSTOM_QUESTIONS_KEY = "custom_question_templates"
+DIVINATIONS_KEY = "kinhdich_divinations"
+NOTES_KEY = "kinhdich_notes"
+CUSTOM_QUESTIONS_KEY = "kinhdich_custom_question_templates"
 
 
 def _now_iso():
