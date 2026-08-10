@@ -5,7 +5,7 @@
 <a class="back-link" href="{{ url_for('divination.history') }}">&larr; Lịch sử gieo quẻ</a>
 <h1>Kết quả gieo quẻ</h1>
 <p class="muted">
-  {{ record.created_at[:16] }} &middot;
+  {{ record.created_at|vn_datetime }} &middot;
   {{ "Mai Hoa Dịch Số" if record.method == "mai_hoa" else "Nhập tay 6 hào" }}
   {% if record.question %} &middot; Câu hỏi: “{{ record.question }}”{% endif %}
   {% if record.nguoi_xem and record.nguoi_xem.ho_ten %} &middot; Người xem: {{ record.nguoi_xem.ho_ten }}{% endif %}

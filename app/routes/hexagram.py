@@ -1,8 +1,6 @@
-from datetime import date
-
 from flask import Blueprint, abort, render_template, request
 
-from ..kinhdich import data_repo, luc_hao, phan_tich, records
+from ..kinhdich import data_repo, luc_hao, phan_tich, records, vn_time
 
 bp = Blueprint("hexagram", __name__)
 
@@ -38,7 +36,7 @@ def detail(number):
         que_ho=phan_tich.que_ho(hexagram["lines"]),
         que_doi=phan_tich.que_doi(hexagram["lines"]),
         que_thac=phan_tich.que_thac(hexagram["lines"]),
-        luc_hao=luc_hao.phan_tich(number, date.today()),
+        luc_hao=luc_hao.phan_tich(number, vn_time.today()),
     )
 
 

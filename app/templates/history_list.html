@@ -12,7 +12,7 @@
       <div>
         <div class="hexagram-card-name">{{ r.hexagram_main.number }}. {{ r.hexagram_main.name }}
           {% if r.hexagram_changed %} → {{ r.hexagram_changed.number }}. {{ r.hexagram_changed.name }}{% endif %}</div>
-        <div class="muted">{{ r.created_at[:16] }} &middot; {{ "Mai Hoa" if r.method == "mai_hoa" else "Nhập tay" }}
+        <div class="muted">{{ r.created_at|vn_datetime }} &middot; {{ "Mai Hoa" if r.method == "mai_hoa" else "Nhập tay" }}
           {% if r.question %} &middot; {{ r.question }}{% endif %}</div>
       </div>
     </a>

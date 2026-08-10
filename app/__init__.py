@@ -1,7 +1,9 @@
 import os
+from datetime import datetime
 
 from flask import Flask
 
+from .kinhdich import vn_time
 from .paths import get_bundle_dir
 from .version import APP_VERSION
 
@@ -14,6 +16,15 @@ def create_app() -> Flask:
         static_folder=os.path.join(bundle_dir, "app", "static"),
     )
     app.secret_key = os.urandom(24)
+
+    @app.template_filter("vn_datetime")
+    def vn_datetime(iso_utc_str, fmt="%Y-%m-%d %H:%M"):
+        """Formats a stored UTC ISO timestamp (created_at) as Vietnam
+        local time for display - storage stays UTC/unambiguous, only the
+        rendering converts, so this is the one place that needs to
+        change if that ever needs to differ per-user."""
+        dt = datetime.fromisoformat(iso_utc_str)
+        return vn_time.to_vn(dt).strftime(fmt)
 
     from .routes.home import bp as home_bp
     from .routes.hexagram import bp as hexagram_bp

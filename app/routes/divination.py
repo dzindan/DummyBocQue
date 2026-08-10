@@ -2,7 +2,7 @@ from datetime import datetime
 
 from flask import Blueprint, abort, redirect, render_template, request, url_for
 
-from ..kinhdich import data_repo, luc_hao, maihoa, manual_cast, nap_am, ngu_hanh, phan_tich, records, the_dung
+from ..kinhdich import data_repo, luc_hao, maihoa, manual_cast, nap_am, ngu_hanh, phan_tich, records, the_dung, vn_time
 
 bp = Blueprint("divination", __name__)
 
@@ -20,7 +20,7 @@ def _all_question_templates():
 
 @bp.route("/gieo-que")
 def form():
-    now = datetime.now()
+    now = vn_time.now()
     return render_template(
         "divination_form.html",
         now_value=now.strftime("%Y-%m-%dT%H:%M"),

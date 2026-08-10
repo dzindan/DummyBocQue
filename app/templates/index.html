@@ -18,7 +18,7 @@
     {% for r in recent %}
     <li>
       <a href="{{ url_for('divination.detail', record_id=r.id) }}">
-        {{ r.created_at[:16] }} — {{ r.question or "(không có câu hỏi)" }}
+        {{ r.created_at|vn_datetime }} — {{ r.question or "(không có câu hỏi)" }}
       </a>
     </li>
     {% endfor %}

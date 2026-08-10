@@ -6,7 +6,7 @@
 <ul class="note-list">
   {% for n in notes %}
   <li>
-    <span class="note-date">{{ n.created_at[:16] }}</span>
+    <span class="note-date">{{ n.created_at|vn_datetime }}</span>
     <a href="{{ url_for('hexagram.detail', number=n.hexagram_number) }}">{{ n.hexagram.number }}. {{ n.hexagram.name }}</a>
     <p>{{ n.content }}</p>
     {% if n.tags %}<span class="tags">{% for t in n.tags %}<em>#{{ t }}</em>{% endfor %}</span>{% endif %}
