@@ -91,5 +91,11 @@ document.querySelectorAll(".datetime-input").forEach(input => {
     input.closest("form").querySelector(".is-manual-input").value = flag;
   });
 });
+
+document.querySelectorAll("#form-mai-hoa, #form-tay").forEach(form => {
+  form.addEventListener("submit", () => {
+    form.querySelector("button[type=submit]").disabled = true;
+  });
+});
 </script>
 {% endblock %}
