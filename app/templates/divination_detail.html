@@ -8,7 +8,20 @@
   {{ record.created_at[:16] }} &middot;
   {{ "Mai Hoa Dịch Số" if record.method == "mai_hoa" else "Nhập tay 6 hào" }}
   {% if record.question %} &middot; Câu hỏi: “{{ record.question }}”{% endif %}
+  {% if record.nguoi_xem and record.nguoi_xem.ho_ten %} &middot; Người xem: {{ record.nguoi_xem.ho_ten }}{% endif %}
 </p>
+
+{% if ban_menh %}
+<div class="the-dung-box">
+  <h3>Bản mệnh ngũ hành</h3>
+  <p><strong>{{ record.nguoi_xem.ho_ten or "Người xem" }}</strong> sinh {{ record.nguoi_xem.ngay_sinh }},
+    Can Chi năm sinh: {{ ban_menh.menh.can_chi }} &middot; Nạp Âm: <strong>{{ ban_menh.menh.nap_am }} ({{ ban_menh.menh.ngu_hanh }})</strong>.</p>
+  <p class="the-dung-verdict">{{ ban_menh.ket_luan }}</p>
+  <p class="muted">Đối chiếu bản mệnh với {{ ban_menh.doi_chieu_nhan }} của quẻ, theo lý thuyết ngũ hành sinh khắc.</p>
+</div>
+{% elif record.nguoi_xem and record.nguoi_xem.ngay_sinh %}
+<p class="note-box">Chưa có bảng Nạp Âm để tính bản mệnh ngũ hành — sẽ tự hiện khi dữ liệu được bổ sung.</p>
+{% endif %}
 
 {% if record.method == "mai_hoa" %}
 <div class="info-box">

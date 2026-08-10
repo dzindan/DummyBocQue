@@ -20,6 +20,13 @@
   </label>
   <input type="hidden" name="category" class="category-input">
 
+  <label>Người được xem quẻ (tùy chọn)
+    <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
+  </label>
+  <label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
+    <input type="date" name="ngay_sinh">
+  </label>
+
   <label>Ngày giờ tính quẻ (mặc định = giờ hệ thống hiện tại, có thể chỉnh tay)
     <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
   </label>
@@ -33,6 +40,13 @@
     <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
   </label>
   <input type="hidden" name="category" class="category-input">
+
+  <label>Người được xem quẻ (tùy chọn)
+    <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
+  </label>
+  <label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
+    <input type="date" name="ngay_sinh">
+  </label>
 
   <label>Ngày giờ hỏi quẻ (chỉ để lưu mốc thời gian, không dùng để tính)
     <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
