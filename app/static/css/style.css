@@ -170,7 +170,6 @@ body {
 .related-hexagrams .hexagram-card { width: 140px; }
 .related-hexagrams .hexagram-bars .bar { width: 60px; }
 
-.the-dung-box { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
 .the-dung-row { display: flex; gap: 24px; margin: 10px 0; flex-wrap: wrap; }
 .the-dung-col { text-align: center; }
 .the-dung-col .hexagram-bars .bar { width: 50px; }

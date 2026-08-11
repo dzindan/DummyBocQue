@@ -38,22 +38,16 @@ def _nguoi_xem_from_form():
     return {"ho_ten": ho_ten, "ngay_sinh": ngay_sinh}
 
 
-@bp.route("/gieo-que/mai-hoa", methods=["POST"])
-def cast_mai_hoa():
-    dt_raw = request.form["datetime"]
-    is_manual = request.form.get("is_manual_datetime") == "on"
-    question = request.form.get("question", "").strip()
-    category = request.form.get("category") or None
-    nguoi_xem = _nguoi_xem_from_form()
-
-    dt = datetime.strptime(dt_raw, "%Y-%m-%dT%H:%M")
+def _save_mai_hoa_cast(dt, is_manual, question, category, nguoi_xem, la_dong_tam=False):
+    """Shared by cast_mai_hoa and cast_dong_tam - both run the exact same
+    Mai Hoa formula and build the same record shape, differing only in
+    where `dt`/`is_manual` come from and the la_dong_tam flag."""
     result = maihoa.calculate(dt.day, dt.month, dt.year, dt.hour)
-
-    record = records.save_divination({
+    payload = {
         "method": "mai_hoa",
         "question": question,
         "category_tag": category,
-        "input_datetime": dt.isoformat(),
+        "input_datetime": dt.replace(tzinfo=None).isoformat(),
         "is_manual_datetime": is_manual,
         "lunar": result["lunar"],
         "can_chi": result["can_chi"],
@@ -63,7 +57,21 @@ def cast_mai_hoa():
         "changed_lines": result["changed_lines"],
         "moving_positions": [result["dong_hao"]],
         "nguoi_xem": nguoi_xem,
-    })
+    }
+    if la_dong_tam:
+        payload["la_dong_tam"] = True
+    return records.save_divination(payload)
+
+
+@bp.route("/gieo-que/mai-hoa", methods=["POST"])
+def cast_mai_hoa():
+    dt = datetime.strptime(request.form["datetime"], "%Y-%m-%dT%H:%M")
+    is_manual = request.form.get("is_manual_datetime") == "on"
+    question = request.form.get("question", "").strip()
+    category = request.form.get("category") or None
+    nguoi_xem = _nguoi_xem_from_form()
+
+    record = _save_mai_hoa_cast(dt, is_manual, question, category, nguoi_xem)
     return redirect(url_for("divination.detail", record_id=record["id"]))
 
 
@@ -114,25 +122,7 @@ def cast_dong_tam():
     category = request.form.get("category") or None
     nguoi_xem = _nguoi_xem_from_form()
 
-    now = vn_time.now()
-    result = maihoa.calculate(now.day, now.month, now.year, now.hour)
-
-    record = records.save_divination({
-        "method": "mai_hoa",
-        "la_dong_tam": True,
-        "question": question,
-        "category_tag": category,
-        "input_datetime": now.replace(tzinfo=None).isoformat(),
-        "is_manual_datetime": False,
-        "lunar": result["lunar"],
-        "can_chi": result["can_chi"],
-        "hexagram_main_number": result["hexagram_main"]["number"],
-        "hexagram_changed_number": result["hexagram_changed"]["number"],
-        "main_lines": result["main_lines"],
-        "changed_lines": result["changed_lines"],
-        "moving_positions": [result["dong_hao"]],
-        "nguoi_xem": nguoi_xem,
-    })
+    record = _save_mai_hoa_cast(vn_time.now(), False, question, category, nguoi_xem, la_dong_tam=True)
     return redirect(url_for("divination.detail", record_id=record["id"]))
 
 

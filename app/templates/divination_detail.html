@@ -14,7 +14,7 @@
 </p>
 
 {% if ban_menh %}
-<div class="the-dung-box">
+<div class="info-box">
   <h3>Bản mệnh ngũ hành</h3>
   <p><strong>{{ record.nguoi_xem.ho_ten or "Người xem" }}</strong> sinh {{ record.nguoi_xem.ngay_sinh }},
     Can Chi năm sinh: {{ ban_menh.menh.can_chi }} &middot; Nạp Âm: <strong>{{ ban_menh.menh.nap_am }} ({{ ban_menh.menh.ngu_hanh }})</strong>.</p>
@@ -58,7 +58,7 @@
 </div>
 
 {% if record.coin_tosses %}
-<div class="the-dung-box">
+<div class="info-box">
   <h3>Chi tiết gieo xu</h3>
   <table class="hao-vi-table">
     <thead><tr><th>Hào</th><th>Xu 1</th><th>Xu 2</th><th>Xu 3</th><th>Kết quả</th></tr></thead>
@@ -76,7 +76,7 @@
 </div>
 {% endif %}
 
-<div class="the-dung-box">
+<div class="info-box">
   <h3>Luận Thể - Dụng (Mai Hoa Dịch Số)</h3>
   {% if the_dung.applicable %}
   <div class="the-dung-row">
@@ -97,30 +97,9 @@
   <p class="muted">Quy tắc xác định chủ hào theo số hào động là quy ước cổ điển tổng hợp lại, mang tính tham khảo.</p>
 </div>
 
-<div class="the-dung-box">
+<div class="info-box">
   <h3>Lục Hào (Bốc Phệ Kinh Phòng)</h3>
-  <p class="muted">
-    Quẻ chính thuộc <strong>{{ luc_hao.palace.palace_name }} cung ({{ luc_hao.palace.palace_ngu_hanh }})</strong>,
-    {{ luc_hao.palace.step_label }} &middot; Thế tại hào {{ luc_hao.palace.the_hao }}, Ứng tại hào {{ luc_hao.palace.ung_hao }} &middot;
-    Ngày gieo: {{ luc_hao.ngay_can }}.
-  </p>
-  <table class="hao-vi-table">
-    <thead>
-      <tr><th>Hào</th><th>Nạp Giáp</th><th>Ngũ hành</th><th>Lục Thân</th><th>Lục Thần</th><th></th></tr>
-    </thead>
-    <tbody>
-      {% for l in luc_hao.lines|reverse %}
-      <tr>
-        <td>{{ hao_vi[l.position - 1].label }}</td>
-        <td>{{ l.can }} {{ l.chi }}</td>
-        <td>{{ l.chi_ngu_hanh }}</td>
-        <td>{{ l.luc_than }}</td>
-        <td>{{ l.luc_than_spirit }}</td>
-        <td>{{ "Thế" if l.la_the else ("Ứng" if l.la_ung else "") }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  {{ m.luc_hao_table(luc_hao, hao_vi, subject="Quẻ chính") }}
 </div>
 
 {% if record.show_weather_direction %}

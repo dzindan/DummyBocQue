@@ -85,29 +85,11 @@
 
 <section>
   <h2>Lục Hào (Bốc Phệ Kinh Phòng)</h2>
-  <p class="muted">
-    Quẻ thuộc <strong>{{ luc_hao.palace.palace_name }} cung ({{ luc_hao.palace.palace_ngu_hanh }})</strong>
-    ({{ luc_hao.palace.step_label }}) &middot;
-    Thế tại hào {{ luc_hao.palace.the_hao }}, Ứng tại hào {{ luc_hao.palace.ung_hao }}.
-  </p>
-  <table class="hao-vi-table">
-    <thead>
-      <tr><th>Hào</th><th>Nạp Giáp</th><th>Ngũ hành</th><th>Lục Thân</th><th>Lục Thần (theo hôm nay)</th><th></th></tr>
-    </thead>
-    <tbody>
-      {% for l in luc_hao.lines|reverse %}
-      <tr>
-        <td>{{ hao_vi[l.position - 1].label }}</td>
-        <td>{{ l.can }} {{ l.chi }}</td>
-        <td>{{ l.chi_ngu_hanh }}</td>
-        <td>{{ l.luc_than }}</td>
-        <td>{{ l.luc_than_spirit }}</td>
-        <td>{{ "Thế" if l.la_the else ("Ứng" if l.la_ung else "") }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  <p class="muted">Lục Thân tính theo ngũ hành nạp chi của hào so với ngũ hành bổn cung; Lục Thần tính theo Thiên Can của ngày xem (ở đây lấy ngày hôm nay làm ví dụ - khi xem trong kết quả gieo quẻ thực tế sẽ tính theo đúng ngày gieo quẻ).</p>
+  {{ m.luc_hao_table(
+    luc_hao, hao_vi,
+    spirit_header="Lục Thần (theo hôm nay)",
+    footnote="Lục Thân tính theo ngũ hành nạp chi của hào so với ngũ hành bổn cung; Lục Thần tính theo Thiên Can của ngày xem (ở đây lấy ngày hôm nay làm ví dụ - khi xem trong kết quả gieo quẻ thực tế sẽ tính theo đúng ngày gieo quẻ)."
+  ) }}
 </section>
 
 <section>

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_macros.html" as m %}
 {% block title %}Gieo quẻ{% endblock %}
 {% block content %}
 <h1>Gieo quẻ</h1>
@@ -16,60 +17,20 @@
 </p>
 
 <form id="form-mai-hoa" class="tab-panel active" method="post" action="{{ url_for('divination.cast_mai_hoa') }}">
-  <label>Câu hỏi
-    <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
-  </label>
-  <input type="hidden" name="category" class="category-input">
-
-  <label>Người được xem quẻ (tùy chọn)
-    <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
-  </label>
-  <label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
-    <input type="date" name="ngay_sinh">
-  </label>
-
-  <label>Ngày giờ tính quẻ (mặc định = giờ hệ thống hiện tại, có thể chỉnh tay)
-    <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
-  </label>
-  <input type="hidden" name="is_manual_datetime" class="is-manual-input" value="">
-
+  {{ m.cau_hoi_va_nguoi_xem_fields() }}
+  {{ m.datetime_field(now_value, "Ngày giờ tính quẻ (mặc định = giờ hệ thống hiện tại, có thể chỉnh tay)") }}
   <button type="submit" class="btn">Gieo quẻ</button>
 </form>
 
 <form id="form-dong-tam" class="tab-panel" method="post" action="{{ url_for('divination.cast_dong_tam') }}">
   <p class="muted">Gieo theo đúng khoảnh khắc tâm động — khi câu hỏi bất chợt nảy ra trong đầu. Dùng công thức Mai Hoa như bình thường, nhưng lấy đúng giờ hiện tại lúc bấm nút, không cho chỉnh sửa (giữ đúng tinh thần "động tâm", không đắn đo).</p>
-  <label>Câu hỏi
-    <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
-  </label>
-  <input type="hidden" name="category" class="category-input">
-
-  <label>Người được xem quẻ (tùy chọn)
-    <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
-  </label>
-  <label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
-    <input type="date" name="ngay_sinh">
-  </label>
-
+  {{ m.cau_hoi_va_nguoi_xem_fields() }}
   <button type="submit" class="btn">Gieo ngay (giờ động tâm)</button>
 </form>
 
 <form id="form-tay" class="tab-panel" method="post" action="{{ url_for('divination.cast_manual') }}">
-  <label>Câu hỏi
-    <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
-  </label>
-  <input type="hidden" name="category" class="category-input">
-
-  <label>Người được xem quẻ (tùy chọn)
-    <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
-  </label>
-  <label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
-    <input type="date" name="ngay_sinh">
-  </label>
-
-  <label>Ngày giờ hỏi quẻ (chỉ để lưu mốc thời gian, không dùng để tính)
-    <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
-  </label>
-  <input type="hidden" name="is_manual_datetime" class="is-manual-input" value="">
+  {{ m.cau_hoi_va_nguoi_xem_fields() }}
+  {{ m.datetime_field(now_value, "Ngày giờ hỏi quẻ (chỉ để lưu mốc thời gian, không dùng để tính)") }}
 
   <p>Gieo 3 đồng xu thật cho từng hào (từ hào 1 dưới cùng đến hào 6 trên cùng), bấm để chọn Sấp/Ngửa đúng như xu đổ ra:</p>
   <p class="muted">Quy ước: 3 Sấp = Lão Dương (động) &middot; 2 Sấp 1 Ngửa = Thiếu Dương &middot; 1 Sấp 2 Ngửa = Thiếu Âm &middot; 3 Ngửa = Lão Âm (động).</p>

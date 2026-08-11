@@ -8,3 +8,51 @@
   {% endfor %}
 </div>
 {% endmacro %}
+
+{% macro cau_hoi_va_nguoi_xem_fields() %}
+<label>Câu hỏi
+  <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
+</label>
+<input type="hidden" name="category" class="category-input">
+
+<label>Người được xem quẻ (tùy chọn)
+  <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
+</label>
+<label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
+  <input type="date" name="ngay_sinh">
+</label>
+{% endmacro %}
+
+{% macro datetime_field(now_value, label) %}
+<label>{{ label }}
+  <input type="datetime-local" name="datetime" class="datetime-input" value="{{ now_value }}" required>
+</label>
+<input type="hidden" name="is_manual_datetime" class="is-manual-input" value="">
+{% endmacro %}
+
+{% macro luc_hao_table(luc_hao, hao_vi, subject="Quẻ", spirit_header="Lục Thần", footnote=None) %}
+<p class="muted">
+  {{ subject }} thuộc <strong>{{ luc_hao.palace.palace_name }} cung ({{ luc_hao.palace.palace_ngu_hanh }})</strong>
+  ({{ luc_hao.palace.step_label }}) &middot;
+  Thế tại hào {{ luc_hao.palace.the_hao }}, Ứng tại hào {{ luc_hao.palace.ung_hao }} &middot;
+  Ngày gieo: {{ luc_hao.ngay_can }}.
+</p>
+<table class="hao-vi-table">
+  <thead>
+    <tr><th>Hào</th><th>Nạp Giáp</th><th>Ngũ hành</th><th>Lục Thân</th><th>{{ spirit_header }}</th><th></th></tr>
+  </thead>
+  <tbody>
+    {% for l in luc_hao.lines|reverse %}
+    <tr>
+      <td>{{ hao_vi[l.position - 1].label }}</td>
+      <td>{{ l.can }} {{ l.chi }}</td>
+      <td>{{ l.chi_ngu_hanh }}</td>
+      <td>{{ l.luc_than }}</td>
+      <td>{{ l.luc_than_spirit }}</td>
+      <td>{{ "Thế" if l.la_the else ("Ứng" if l.la_ung else "") }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% if footnote %}<p class="muted">{{ footnote }}</p>{% endif %}
+{% endmacro %}
