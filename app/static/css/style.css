@@ -115,6 +115,18 @@ body {
 }
 .hao-select { flex-direction: row !important; align-items: center; justify-content: space-between; }
 
+.coin-row {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  padding: 8px 0; border-bottom: 1px solid var(--line);
+}
+.coin-row-label { width: 56px; font-weight: 600; }
+.coin-toggle {
+  border: 1px solid var(--line); background: #fff; border-radius: 6px;
+  padding: 6px 12px; cursor: pointer; min-width: 64px; font-size: 0.9rem;
+}
+.coin-toggle.coin-sap { background: var(--accent); color: #fff; border-color: var(--accent); }
+.coin-row-result { margin-left: auto; font-size: 0.85rem; }
+
 .chip {
   border: 1px solid var(--line); background: #fff; border-radius: 999px;
   padding: 4px 10px; margin: 2px; font-size: 0.85rem; cursor: pointer;

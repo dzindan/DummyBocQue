@@ -5,6 +5,7 @@
 
 <div class="tabs">
   <button type="button" class="tab-btn active" data-tab="mai-hoa">Mai Hoa Dịch Số (theo ngày giờ)</button>
+  <button type="button" class="tab-btn" data-tab="dong-tam">Giờ động tâm</button>
   <button type="button" class="tab-btn" data-tab="tay">Nhập tay 6 hào (gieo xu ngoài đời)</button>
 </div>
 
@@ -35,6 +36,23 @@
   <button type="submit" class="btn">Gieo quẻ</button>
 </form>
 
+<form id="form-dong-tam" class="tab-panel" method="post" action="{{ url_for('divination.cast_dong_tam') }}">
+  <p class="muted">Gieo theo đúng khoảnh khắc tâm động — khi câu hỏi bất chợt nảy ra trong đầu. Dùng công thức Mai Hoa như bình thường, nhưng lấy đúng giờ hiện tại lúc bấm nút, không cho chỉnh sửa (giữ đúng tinh thần "động tâm", không đắn đo).</p>
+  <label>Câu hỏi
+    <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
+  </label>
+  <input type="hidden" name="category" class="category-input">
+
+  <label>Người được xem quẻ (tùy chọn)
+    <input type="text" name="ho_ten" placeholder="Họ tên (tùy chọn)">
+  </label>
+  <label>Ngày sinh người được xem (tùy chọn, để tính bản mệnh ngũ hành)
+    <input type="date" name="ngay_sinh">
+  </label>
+
+  <button type="submit" class="btn">Gieo ngay (giờ động tâm)</button>
+</form>
+
 <form id="form-tay" class="tab-panel" method="post" action="{{ url_for('divination.cast_manual') }}">
   <label>Câu hỏi
     <input type="text" name="question" class="question-input" placeholder="(tùy chọn) Câu hỏi muốn xem quẻ...">
@@ -53,15 +71,17 @@
   </label>
   <input type="hidden" name="is_manual_datetime" class="is-manual-input" value="">
 
-  <p>Nhập kết quả gieo xu/cỏ thi thật, từ hào 1 (dưới cùng) đến hào 6 (trên cùng):</p>
+  <p>Gieo 3 đồng xu thật cho từng hào (từ hào 1 dưới cùng đến hào 6 trên cùng), bấm để chọn Sấp/Ngửa đúng như xu đổ ra:</p>
+  <p class="muted">Quy ước: 3 Sấp = Lão Dương (động) &middot; 2 Sấp 1 Ngửa = Thiếu Dương &middot; 1 Sấp 2 Ngửa = Thiếu Âm &middot; 3 Ngửa = Lão Âm (động).</p>
   {% for i in range(1, 7) %}
-  <label class="hao-select">Hào {{ i }}
-    <select name="hao_{{ i }}" required>
-      {% for value, label in line_state_labels %}
-      <option value="{{ value }}" {{ "selected" if value == "duong_tinh" }}>{{ label }}</option>
-      {% endfor %}
-    </select>
-  </label>
+  <div class="coin-row" data-hao="{{ i }}">
+    <span class="coin-row-label">Hào {{ i }}</span>
+    {% for j in range(1, 4) %}
+    <button type="button" class="coin-toggle" data-value="ngua">Ngửa</button>
+    <input type="hidden" name="xu_{{ i }}_{{ j }}" class="coin-input" value="ngua">
+    {% endfor %}
+    <span class="coin-row-result muted">1 Ngửa? chọn xu để tính…</span>
+  </div>
   {% endfor %}
 
   <button type="submit" class="btn">Xem quẻ</button>
@@ -92,10 +112,35 @@ document.querySelectorAll(".datetime-input").forEach(input => {
   });
 });
 
-document.querySelectorAll("#form-mai-hoa, #form-tay").forEach(form => {
+document.querySelectorAll("#form-mai-hoa, #form-dong-tam, #form-tay").forEach(form => {
   form.addEventListener("submit", () => {
     form.querySelector("button[type=submit]").disabled = true;
   });
+});
+
+const COIN_RULE = {3: "Lão Dương (động)", 2: "Thiếu Dương", 1: "Thiếu Âm", 0: "Lão Âm (động)"};
+
+function updateCoinRow(row) {
+  const toggles = row.querySelectorAll(".coin-toggle");
+  let sapCount = 0;
+  toggles.forEach(t => { if (t.dataset.value === "sap") sapCount++; });
+  row.querySelector(".coin-row-result").textContent =
+    sapCount + " Sấp, " + (3 - sapCount) + " Ngửa → " + COIN_RULE[sapCount];
+}
+
+document.querySelectorAll(".coin-row").forEach(row => {
+  row.querySelectorAll(".coin-toggle").forEach((btn, idx) => {
+    const hidden = row.querySelectorAll(".coin-input")[idx];
+    btn.addEventListener("click", () => {
+      const next = btn.dataset.value === "sap" ? "ngua" : "sap";
+      btn.dataset.value = next;
+      btn.textContent = next === "sap" ? "Sấp" : "Ngửa";
+      btn.classList.toggle("coin-sap", next === "sap");
+      hidden.value = next;
+      updateCoinRow(row);
+    });
+  });
+  updateCoinRow(row);
 });
 </script>
 {% endblock %}

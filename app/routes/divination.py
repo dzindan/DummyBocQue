@@ -74,11 +74,14 @@ def cast_manual():
     question = request.form.get("question", "").strip()
     category = request.form.get("category") or None
     nguoi_xem = _nguoi_xem_from_form()
-    states = [request.form.get(f"hao_{i}") for i in range(1, 7)]
+    coin_tosses = [
+        [request.form.get(f"xu_{hao}_{xu}") for xu in range(1, 4)]
+        for hao in range(1, 7)
+    ]
 
     dt = datetime.strptime(dt_raw, "%Y-%m-%dT%H:%M")
     try:
-        result = manual_cast.resolve(states)
+        result = manual_cast.resolve_from_coins(coin_tosses)
     except ValueError:
         abort(400)
 
@@ -95,6 +98,39 @@ def cast_manual():
         "main_lines": result["main_lines"],
         "changed_lines": result["changed_lines"],
         "moving_positions": result["moving_positions"],
+        "coin_tosses": coin_tosses,
+        "nguoi_xem": nguoi_xem,
+    })
+    return redirect(url_for("divination.detail", record_id=record["id"]))
+
+
+@bp.route("/gieo-que/dong-tam", methods=["POST"])
+def cast_dong_tam():
+    """Gieo theo giờ động tâm: same Mai Hoa formula as cast_mai_hoa, but
+    always the exact current moment - no date/time field to edit, by
+    design (the whole point of "động tâm" is casting the instant the
+    question arises, not a deliberated/chosen time)."""
+    question = request.form.get("question", "").strip()
+    category = request.form.get("category") or None
+    nguoi_xem = _nguoi_xem_from_form()
+
+    now = vn_time.now()
+    result = maihoa.calculate(now.day, now.month, now.year, now.hour)
+
+    record = records.save_divination({
+        "method": "mai_hoa",
+        "la_dong_tam": True,
+        "question": question,
+        "category_tag": category,
+        "input_datetime": now.replace(tzinfo=None).isoformat(),
+        "is_manual_datetime": False,
+        "lunar": result["lunar"],
+        "can_chi": result["can_chi"],
+        "hexagram_main_number": result["hexagram_main"]["number"],
+        "hexagram_changed_number": result["hexagram_changed"]["number"],
+        "main_lines": result["main_lines"],
+        "changed_lines": result["changed_lines"],
+        "moving_positions": [result["dong_hao"]],
         "nguoi_xem": nguoi_xem,
     })
     return redirect(url_for("divination.detail", record_id=record["id"]))

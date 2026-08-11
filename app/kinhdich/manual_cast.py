@@ -14,6 +14,40 @@ VALID_STATES = {"duong_tinh", "am_tinh", "duong_dong", "am_dong"}
 IS_YANG = {"duong_tinh": True, "duong_dong": True, "am_tinh": False, "am_dong": False}
 IS_MOVING = {"duong_tinh": False, "am_tinh": False, "duong_dong": True, "am_dong": True}
 
+# 3-coin toss rule (Sấp/Ngửa), cross-checked against multiple Vietnamese
+# sources describing the classical "tam đồng tiền" method - note this
+# assigns Sấp (not Ngửa) to the yang/dương count, the opposite of what
+# might be guessed from "Ngửa = mặt trên = dương":
+#   3 Sấp          -> Lão Dương (dương động)
+#   2 Sấp, 1 Ngửa  -> Thiếu Dương (dương tĩnh)
+#   1 Sấp, 2 Ngửa  -> Thiếu Âm (âm tĩnh)
+#   3 Ngửa         -> Lão Âm (âm động)
+_COIN_RULE_BY_SAP_COUNT = {
+    3: "duong_dong",
+    2: "duong_tinh",
+    1: "am_tinh",
+    0: "am_dong",
+}
+
+
+def state_from_coins(coin_faces: list) -> str:
+    """coin_faces: list of 3 strings, each "sap" or "ngua"."""
+    if len(coin_faces) != 3 or any(f not in ("sap", "ngua") for f in coin_faces):
+        raise ValueError(f"Cần đúng 3 mặt xu (sap/ngua): {coin_faces}")
+    sap_count = coin_faces.count("sap")
+    return _COIN_RULE_BY_SAP_COUNT[sap_count]
+
+
+def resolve_from_coins(coin_tosses: list) -> dict:
+    """coin_tosses: list of 6 lists (bottom to top), each 3 "sap"/"ngua"
+    strings - the raw result of 6 real 3-coin tosses."""
+    if len(coin_tosses) != 6:
+        raise ValueError("Cần đúng 6 lần gieo xu")
+    states = [state_from_coins(faces) for faces in coin_tosses]
+    result = resolve(states)
+    result["coin_tosses"] = coin_tosses
+    return result
+
 
 def resolve(states: list) -> dict:
     if len(states) != 6:

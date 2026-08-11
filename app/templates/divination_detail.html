@@ -6,7 +6,9 @@
 <h1>Kết quả gieo quẻ</h1>
 <p class="muted">
   {{ record.created_at|vn_datetime }} &middot;
-  {{ "Mai Hoa Dịch Số" if record.method == "mai_hoa" else "Nhập tay 6 hào" }}
+  {% if record.la_dong_tam %}Mai Hoa Dịch Số — Giờ động tâm
+  {% elif record.method == "mai_hoa" %}Mai Hoa Dịch Số
+  {% else %}Nhập tay 6 hào (gieo xu){% endif %}
   {% if record.question %} &middot; Câu hỏi: “{{ record.question }}”{% endif %}
   {% if record.nguoi_xem and record.nguoi_xem.ho_ten %} &middot; Người xem: {{ record.nguoi_xem.ho_ten }}{% endif %}
 </p>
@@ -54,6 +56,25 @@
   </div>
   {% endif %}
 </div>
+
+{% if record.coin_tosses %}
+<div class="the-dung-box">
+  <h3>Chi tiết gieo xu</h3>
+  <table class="hao-vi-table">
+    <thead><tr><th>Hào</th><th>Xu 1</th><th>Xu 2</th><th>Xu 3</th><th>Kết quả</th></tr></thead>
+    <tbody>
+      {% for coins in record.coin_tosses|reverse %}
+      {% set i = loop.revindex %}
+      <tr>
+        <td>Hào {{ i }}</td>
+        {% for c in coins %}<td>{{ "Sấp" if c == "sap" else "Ngửa" }}</td>{% endfor %}
+        <td>{{ hao_vi[i - 1].label }}{{ " (động)" if i in record.moving_positions }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
 
 <div class="the-dung-box">
   <h3>Luận Thể - Dụng (Mai Hoa Dịch Số)</h3>
