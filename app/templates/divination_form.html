@@ -6,7 +6,6 @@
 
 <div class="tabs">
   <button type="button" class="tab-btn active" data-tab="mai-hoa">Mai Hoa Dịch Số (theo ngày giờ)</button>
-  <button type="button" class="tab-btn" data-tab="dong-tam">Giờ động tâm</button>
   <button type="button" class="tab-btn" data-tab="tay">Nhập tay 6 hào (gieo xu ngoài đời)</button>
 </div>
 
@@ -17,15 +16,10 @@
 </p>
 
 <form id="form-mai-hoa" class="tab-panel active" method="post" action="{{ url_for('divination.cast_mai_hoa') }}">
+  <p class="muted">Để nguyên giờ mặc định (không chỉnh) = gieo theo đúng khoảnh khắc tâm động, đúng tinh thần Mai Hoa Dịch Số truyền thống. Chỉnh giờ tay nếu muốn xem quẻ cho một thời điểm khác.</p>
   {{ m.cau_hoi_va_nguoi_xem_fields() }}
   {{ m.datetime_field(now_value, "Ngày giờ tính quẻ (mặc định = giờ hệ thống hiện tại, có thể chỉnh tay)") }}
   <button type="submit" class="btn">Gieo quẻ</button>
-</form>
-
-<form id="form-dong-tam" class="tab-panel" method="post" action="{{ url_for('divination.cast_dong_tam') }}">
-  <p class="muted">Gieo theo đúng khoảnh khắc tâm động — khi câu hỏi bất chợt nảy ra trong đầu. Dùng công thức Mai Hoa như bình thường, nhưng lấy đúng giờ hiện tại lúc bấm nút, không cho chỉnh sửa (giữ đúng tinh thần "động tâm", không đắn đo).</p>
-  {{ m.cau_hoi_va_nguoi_xem_fields() }}
-  <button type="submit" class="btn">Gieo ngay (giờ động tâm)</button>
 </form>
 
 <form id="form-tay" class="tab-panel" method="post" action="{{ url_for('divination.cast_manual') }}">
@@ -73,7 +67,7 @@ document.querySelectorAll(".datetime-input").forEach(input => {
   });
 });
 
-document.querySelectorAll("#form-mai-hoa, #form-dong-tam, #form-tay").forEach(form => {
+document.querySelectorAll("#form-mai-hoa, #form-tay").forEach(form => {
   form.addEventListener("submit", () => {
     form.querySelector("button[type=submit]").disabled = true;
   });

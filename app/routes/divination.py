@@ -38,16 +38,25 @@ def _nguoi_xem_from_form():
     return {"ho_ten": ho_ten, "ngay_sinh": ngay_sinh}
 
 
-def _save_mai_hoa_cast(dt, is_manual, question, category, nguoi_xem, la_dong_tam=False):
-    """Shared by cast_mai_hoa and cast_dong_tam - both run the exact same
-    Mai Hoa formula and build the same record shape, differing only in
-    where `dt`/`is_manual` come from and the la_dong_tam flag."""
+@bp.route("/gieo-que/mai-hoa", methods=["POST"])
+def cast_mai_hoa():
+    dt = datetime.strptime(request.form["datetime"], "%Y-%m-%dT%H:%M")
+    is_manual = request.form.get("is_manual_datetime") == "on"
+    question = request.form.get("question", "").strip()
+    category = request.form.get("category") or None
+    nguoi_xem = _nguoi_xem_from_form()
+
+    # "Giờ động tâm" isn't a different formula - it's this same Mai Hoa
+    # cast, just insisting on the unedited current moment. So: leave the
+    # datetime field untouched and it counts as động tâm automatically;
+    # edit it (is_manual) and it's an ordinary chosen-time cast.
     result = maihoa.calculate(dt.day, dt.month, dt.year, dt.hour)
-    payload = {
+    record = records.save_divination({
         "method": "mai_hoa",
+        "la_dong_tam": not is_manual,
         "question": question,
         "category_tag": category,
-        "input_datetime": dt.replace(tzinfo=None).isoformat(),
+        "input_datetime": dt.isoformat(),
         "is_manual_datetime": is_manual,
         "lunar": result["lunar"],
         "can_chi": result["can_chi"],
@@ -57,21 +66,7 @@ def _save_mai_hoa_cast(dt, is_manual, question, category, nguoi_xem, la_dong_tam
         "changed_lines": result["changed_lines"],
         "moving_positions": [result["dong_hao"]],
         "nguoi_xem": nguoi_xem,
-    }
-    if la_dong_tam:
-        payload["la_dong_tam"] = True
-    return records.save_divination(payload)
-
-
-@bp.route("/gieo-que/mai-hoa", methods=["POST"])
-def cast_mai_hoa():
-    dt = datetime.strptime(request.form["datetime"], "%Y-%m-%dT%H:%M")
-    is_manual = request.form.get("is_manual_datetime") == "on"
-    question = request.form.get("question", "").strip()
-    category = request.form.get("category") or None
-    nguoi_xem = _nguoi_xem_from_form()
-
-    record = _save_mai_hoa_cast(dt, is_manual, question, category, nguoi_xem)
+    })
     return redirect(url_for("divination.detail", record_id=record["id"]))
 
 
@@ -109,20 +104,6 @@ def cast_manual():
         "coin_tosses": coin_tosses,
         "nguoi_xem": nguoi_xem,
     })
-    return redirect(url_for("divination.detail", record_id=record["id"]))
-
-
-@bp.route("/gieo-que/dong-tam", methods=["POST"])
-def cast_dong_tam():
-    """Gieo theo giờ động tâm: same Mai Hoa formula as cast_mai_hoa, but
-    always the exact current moment - no date/time field to edit, by
-    design (the whole point of "động tâm" is casting the instant the
-    question arises, not a deliberated/chosen time)."""
-    question = request.form.get("question", "").strip()
-    category = request.form.get("category") or None
-    nguoi_xem = _nguoi_xem_from_form()
-
-    record = _save_mai_hoa_cast(vn_time.now(), False, question, category, nguoi_xem, la_dong_tam=True)
     return redirect(url_for("divination.detail", record_id=record["id"]))
 
 
