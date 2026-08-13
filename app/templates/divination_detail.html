@@ -114,6 +114,7 @@
 <section>
   <h3>Ghi chú luận giải</h3>
   <form method="post" action="{{ url_for('divination.update_note', record_id=record.id) }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
     <textarea name="note" placeholder="Ghi chú luận giải của bạn...">{{ record.note or "" }}</textarea>
     <button type="submit" class="btn">Lưu ghi chú</button>
   </form>
@@ -121,6 +122,7 @@
 
 <form method="post" action="{{ url_for('divination.delete', record_id=record.id) }}"
       onsubmit="return confirm('Xóa lần gieo quẻ này?');">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
   <button type="submit" class="btn danger">Xóa bản ghi</button>
 </form>
 {% endblock %}

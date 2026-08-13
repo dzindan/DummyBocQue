@@ -10,13 +10,11 @@ compiled from cross-checked sources rather than hand-typed here, for the
 same reason the Lục Hào tables are verified rather than guessed.
 """
 
-import json
-import os
 from functools import lru_cache
 
+from . import data_repo
 from .canchi import THIEN_CAN, DIA_CHI, year_can_chi
 from .lunar import solar_to_lunar
-from ..paths import get_data_dir
 
 _CAN_CHI_SEQUENCE = [(n % 10, n % 12) for n in range(60)]
 _INDEX_BY_CAN_CHI = {pair: n for n, pair in enumerate(_CAN_CHI_SEQUENCE)}
@@ -24,11 +22,10 @@ _INDEX_BY_CAN_CHI = {pair: n for n, pair in enumerate(_CAN_CHI_SEQUENCE)}
 
 @lru_cache(maxsize=1)
 def _table():
-    path = os.path.join(get_data_dir(), "nap_am.json")
-    if not os.path.exists(path):
+    try:
+        return data_repo.load_json("nap_am.json")
+    except FileNotFoundError:
         return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 
 def is_available() -> bool:

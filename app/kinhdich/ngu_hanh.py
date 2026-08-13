@@ -6,6 +6,15 @@ and (later) Lục Hào lục thân derivation.
 SINH_CYCLE = {"Kim": "Thủy", "Thủy": "Mộc", "Mộc": "Hỏa", "Hỏa": "Thổ", "Thổ": "Kim"}
 KHAC_CYCLE = {"Kim": "Mộc", "Mộc": "Thổ", "Thổ": "Thủy", "Thủy": "Hỏa", "Hỏa": "Kim"}
 
+# The 5 possible quan_he() outcomes, as a real constant rather than a
+# contract every consumer re-derives by hand. Several modules (the_dung.py,
+# luc_hao.py, routes/divination.py) each keep their own dict keyed by these
+# same 5 outcomes; importing this lets them assert their key set actually
+# matches quan_he()'s contract, so a typo'd/missing key fails loudly at
+# import time instead of surfacing only as a KeyError the first time that
+# particular relationship comes up.
+RELATION_KEYS = ("sinh", "duoc_sinh", "khac", "bi_khac", "hoa")
+
 
 def quan_he(a: str, b: str) -> str:
     """Ngũ hành relationship of a -> b, from a's perspective.

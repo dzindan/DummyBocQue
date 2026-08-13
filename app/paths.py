@@ -6,6 +6,15 @@ def is_frozen() -> bool:
     return getattr(sys, "frozen", False)
 
 
+def is_vercel() -> bool:
+    """True when running on Vercel, where the filesystem is read-only/
+    ephemeral outside /tmp. Shared here so get_app_data_dir() below and
+    app/storage/__init__.py's backend selection both key off the exact same
+    signal, instead of each independently checking a different env var for
+    what's really the same "is local disk persistent here" question."""
+    return bool(os.environ.get("VERCEL"))
+
+
 def get_bundle_dir() -> str:
     """Directory containing bundled read-only assets (templates, static,
     data). When packaged with PyInstaller --onefile, bundled data lives
@@ -28,7 +37,7 @@ def get_app_data_dir() -> str:
     from crashing there. A real deployment needing durable storage should
     swap in a proper StorageBackend (e.g. a hosted DB) instead.
     """
-    if os.environ.get("VERCEL"):
+    if is_vercel():
         data_dir = "/tmp/kinhdichapp"
     else:
         base = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")

@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 
 from flask import Flask
+from flask_wtf import CSRFProtect
 
 from .kinhdich import vn_time
 from .paths import get_bundle_dir
@@ -16,6 +17,13 @@ def create_app() -> Flask:
         static_folder=os.path.join(bundle_dir, "app", "static"),
     )
     app.secret_key = os.urandom(24)
+    # Every POST route here mutates state (delete history/notes, add notes)
+    # with no auth in front of it - without CSRF protection, a form on any
+    # other site could silently submit to these endpoints in a logged-in
+    # user's browser. CSRFProtect checks a token on every POST/PUT/PATCH/
+    # DELETE automatically; the 6 <form method="post"> templates each carry
+    # a hidden csrf_token field for it to check.
+    CSRFProtect(app)
 
     @app.template_filter("vn_datetime")
     def vn_datetime(iso_utc_str, fmt="%Y-%m-%d %H:%M"):

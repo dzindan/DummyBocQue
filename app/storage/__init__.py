@@ -7,8 +7,9 @@ colliding with Tu Vi App's own keys in that shared project.
 """
 
 import os
+import warnings
 
-from ..paths import get_app_data_dir
+from ..paths import get_app_data_dir, is_vercel
 from .base import StorageBackend
 from .local_backend import LocalFileBackend
 from .supabase_backend import SupabaseBackend
@@ -27,5 +28,18 @@ def get_backend() -> StorageBackend:
     if using_supabase():
         _backend = SupabaseBackend(os.environ["SUPABASE_URL"], os.environ["SUPABASE_KEY"])
     else:
+        if is_vercel():
+            # /tmp on Vercel is ephemeral and not shared across instances -
+            # falling back to LocalFileBackend here means every cold start
+            # silently starts from empty history, with nothing telling the
+            # operator they forgot to configure Supabase. Loud in the logs
+            # beats a deployment that quietly "works" while losing every save.
+            warnings.warn(
+                "Running on Vercel without SUPABASE_URL/SUPABASE_KEY set - "
+                "divination history/notes will NOT persist across cold "
+                "starts. Set both env vars to use the Supabase backend.",
+                RuntimeWarning,
+                stacklevel=2,
+            )
         _backend = LocalFileBackend(get_app_data_dir())
     return _backend

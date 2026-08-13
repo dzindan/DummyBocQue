@@ -96,6 +96,7 @@
   <h2>Ghi chú cá nhân</h2>
   <form class="note-form" action="{{ url_for('hexagram.add_note', number=hexagram.number) }}" method="post"
         onsubmit="return submitNote(event, {{ hexagram.number }})">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
     <textarea name="content" placeholder="Ghi chú của bạn về quẻ này..." required></textarea>
     <input type="text" name="tags" placeholder="Tags, cách nhau bởi dấu phẩy">
     <button type="submit">Lưu ghi chú</button>

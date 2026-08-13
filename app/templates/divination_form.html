@@ -16,6 +16,7 @@
 </p>
 
 <form id="form-mai-hoa" class="tab-panel active" method="post" action="{{ url_for('divination.cast_mai_hoa') }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
   <p class="muted">Để nguyên giờ mặc định (không chỉnh) = gieo theo đúng khoảnh khắc tâm động, đúng tinh thần Mai Hoa Dịch Số truyền thống. Chỉnh giờ tay nếu muốn xem quẻ cho một thời điểm khác.</p>
   {{ m.cau_hoi_va_nguoi_xem_fields() }}
   {{ m.datetime_field(now_value, "Ngày giờ tính quẻ (mặc định = giờ hệ thống hiện tại, có thể chỉnh tay)") }}
@@ -23,6 +24,7 @@
 </form>
 
 <form id="form-tay" class="tab-panel" method="post" action="{{ url_for('divination.cast_manual') }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
   {{ m.cau_hoi_va_nguoi_xem_fields() }}
   {{ m.datetime_field(now_value, "Ngày giờ hỏi quẻ (chỉ để lưu mốc thời gian, không dùng để tính)") }}
 

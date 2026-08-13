@@ -11,6 +11,7 @@
     <p>{{ n.content }}</p>
     {% if n.tags %}<span class="tags">{% for t in n.tags %}<em>#{{ t }}</em>{% endfor %}</span>{% endif %}
     <form method="post" action="{{ url_for('notes.delete', note_id=n.id) }}" onsubmit="return confirm('Xóa ghi chú này?');">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
       <button type="submit" class="btn danger small">Xóa</button>
     </form>
   </li>

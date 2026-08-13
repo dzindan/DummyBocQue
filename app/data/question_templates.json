@@ -7,6 +7,6 @@
   {"category": "Gia đình", "text": "Việc gia đình hôm nay có thuận không?"},
   {"category": "Học tập/Thi cử", "text": "Kỳ thi/việc học sắp tới có thuận lợi không?"},
   {"category": "Quyết định chung", "text": "Có nên tiến hành việc này không?"},
-  {"category": "Thời tiết", "text": "Hôm nay/ngày mai trời có mưa không?"},
-  {"category": "Xuất hành", "text": "Hôm nay đi hướng nào thuận lợi?"}
+  {"category": "Thời tiết", "text": "Hôm nay/ngày mai trời có mưa không?", "needs_direction": true},
+  {"category": "Xuất hành", "text": "Hôm nay đi hướng nào thuận lợi?", "needs_direction": true}
 ]

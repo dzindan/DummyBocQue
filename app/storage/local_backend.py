@@ -38,22 +38,49 @@ class LocalFileBackend(StorageBackend):
         # Blob keys are path-like, e.g. "knowledge/Ghi_chu.txt" - map
         # straight onto a real subdirectory under the app-data dir, so a
         # prefix like "knowledge/" IS the real folder users can drop
-        # files into directly.
-        return os.path.join(self.app_data_dir, *key.strip("/").split("/"))
+        # files into directly. Reject "..", empty, and drive-letter/
+        # absolute segments so a key can never resolve outside
+        # app_data_dir - nothing in this app passes a user-controlled key
+        # here today, but this class is shared by the whole kinhdich-family
+        # of apps, and a future caller that does pass one through shouldn't
+        # get path traversal for free.
+        parts = key.strip("/").split("/")
+        for part in parts:
+            if part in ("", ".", "..") or os.path.isabs(part) or ":" in part:
+                raise ValueError(f"Unsafe blob key: {key!r}")
+        return os.path.join(self.app_data_dir, *parts)
 
     def list_blobs(self, prefix: str) -> list:
-        dir_path = self._full_path(prefix)
+        # base.py documents this as "keys whose key starts with prefix" -
+        # matches SupabaseBackend's `like.{prefix}*`, including a prefix
+        # that's only a partial filename (e.g. "knowledge/Ghi" matching
+        # "knowledge/Ghi_chu.txt"), not just a prefix that happens to be a
+        # full directory name.
+        # Only strip a leading slash - a *trailing* one is meaningful (it
+        # means "everything in this directory", i.e. an empty filename
+        # prefix) and must survive rpartition below.
+        prefix_norm = prefix.lstrip("/")
+        if "/" in prefix_norm:
+            dir_key, _, filename_prefix = prefix_norm.rpartition("/")
+            dir_path = self._full_path(dir_key) if dir_key else self.app_data_dir
+            key_prefix = f"{dir_key}/" if dir_key else ""
+        else:
+            dir_path = self.app_data_dir
+            filename_prefix = prefix_norm
+            key_prefix = ""
+
         if not os.path.isdir(dir_path):
             return []
         entries = []
-        prefix_norm = prefix.rstrip("/")
         for fname in sorted(os.listdir(dir_path)):
+            if not fname.startswith(filename_prefix):
+                continue
             full = os.path.join(dir_path, fname)
             if not os.path.isfile(full):
                 continue
             stat = os.stat(full)
             entries.append({
-                "key": f"{prefix_norm}/{fname}",
+                "key": f"{key_prefix}{fname}",
                 "size": stat.st_size,
                 "updated_at": stat.st_mtime,
             })

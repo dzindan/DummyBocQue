@@ -89,17 +89,17 @@ def bat_cung_info(hexagram_number: int) -> dict:
 # to top) for each position.
 NAP_GIAP = {
     "cAN":  {"can_noi": "Giáp", "can_ngoai": "Nhâm", "chi_noi": ["Tý", "Dần", "Thìn"], "chi_ngoai": ["Ngọ", "Thân", "Tuất"]},
-    "khon": {"can_noi": "Ất",   "can_ngoai": "Quý",  "chi_noi": ["Mùi", "Tị", "Mão"],  "chi_ngoai": ["Sửu", "Hợi", "Dậu"]},
+    "khon": {"can_noi": "Ất",   "can_ngoai": "Quý",  "chi_noi": ["Mùi", "Tỵ", "Mão"],  "chi_ngoai": ["Sửu", "Hợi", "Dậu"]},
     "chan": {"can_noi": "Canh", "can_ngoai": "Canh", "chi_noi": ["Tý", "Dần", "Thìn"], "chi_ngoai": ["Ngọ", "Thân", "Tuất"]},
-    "ton":  {"can_noi": "Tân",  "can_ngoai": "Tân",  "chi_noi": ["Sửu", "Hợi", "Dậu"], "chi_ngoai": ["Mùi", "Tị", "Mão"]},
+    "ton":  {"can_noi": "Tân",  "can_ngoai": "Tân",  "chi_noi": ["Sửu", "Hợi", "Dậu"], "chi_ngoai": ["Mùi", "Tỵ", "Mão"]},
     "kham": {"can_noi": "Mậu",  "can_ngoai": "Mậu",  "chi_noi": ["Dần", "Thìn", "Ngọ"], "chi_ngoai": ["Thân", "Tuất", "Tý"]},
-    "ly":   {"can_noi": "Kỷ",   "can_ngoai": "Kỷ",   "chi_noi": ["Mão", "Sửu", "Hợi"], "chi_ngoai": ["Dậu", "Mùi", "Tị"]},
+    "ly":   {"can_noi": "Kỷ",   "can_ngoai": "Kỷ",   "chi_noi": ["Mão", "Sửu", "Hợi"], "chi_ngoai": ["Dậu", "Mùi", "Tỵ"]},
     "can2": {"can_noi": "Bính", "can_ngoai": "Bính", "chi_noi": ["Thìn", "Ngọ", "Thân"], "chi_ngoai": ["Tuất", "Tý", "Dần"]},
-    "doai": {"can_noi": "Đinh", "can_ngoai": "Đinh", "chi_noi": ["Tị", "Mão", "Sửu"], "chi_ngoai": ["Hợi", "Dậu", "Mùi"]},
+    "doai": {"can_noi": "Đinh", "can_ngoai": "Đinh", "chi_noi": ["Tỵ", "Mão", "Sửu"], "chi_ngoai": ["Hợi", "Dậu", "Mùi"]},
 }
 
 CHI_NGU_HANH = {
-    "Tý": "Thủy", "Sửu": "Thổ", "Dần": "Mộc", "Mão": "Mộc", "Thìn": "Thổ", "Tị": "Hỏa",
+    "Tý": "Thủy", "Sửu": "Thổ", "Dần": "Mộc", "Mão": "Mộc", "Thìn": "Thổ", "Tỵ": "Hỏa",
     "Ngọ": "Hỏa", "Mùi": "Thổ", "Thân": "Kim", "Dậu": "Kim", "Tuất": "Thổ", "Hợi": "Thủy",
 }
 
@@ -110,6 +110,7 @@ SIX_RELATIONS = {
     "bi_khac": "Thê Tài",    # ta khắc nó
     "hoa": "Huynh Đệ",       # cùng ngũ hành với ta
 }
+assert set(SIX_RELATIONS) == set(ngu_hanh.RELATION_KEYS)
 
 SIX_SPIRITS = ["Thanh Long", "Chu Tước", "Câu Trần", "Đằng Xà", "Bạch Hổ", "Huyền Vũ"]
 # day Can index (0=Giáp..9=Quý) -> starting spirit index for line 1
